@@ -212,9 +212,9 @@ if __name__ == "__main__":
     # x_train, x_test, y_train, y_test = get_feature_234gram()
     # do_mlp(x_train, x_test, y_train, y_test)
 
-    print("text feature & nb")
-    x_train, x_test, y_train, y_test = get_feature()
-    do_nb(x_train, x_test, y_train, y_test)
+    # print("text feature & nb")
+    # x_train, x_test, y_train, y_test = get_feature()
+    # do_nb(x_train, x_test, y_train, y_test)
     """
     print "text feature & xgboost"
     x_train, x_test, y_train, y_test = get_feature()
