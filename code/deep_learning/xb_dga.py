@@ -1,10 +1,11 @@
 import pandas as pd
 import re
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report
+from sklearn.metrics import classification_report, auc, roc_curve
 from sklearn import metrics
 import xgboost as xgb
 from sklearn.feature_extraction.text import CountVectorizer
+import matplotlib.pyplot as plt
 import sklearn
 
 dga_file="../../data/dga/dga.txt"

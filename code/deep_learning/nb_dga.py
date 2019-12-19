@@ -1,10 +1,11 @@
 import pandas as pd
 from sklearn.naive_bayes import GaussianNB
-from sklearn.metrics import classification_report
+from sklearn.metrics import classification_report, roc_curve, auc
 from sklearn import metrics
 import re
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
+import matplotlib.pyplot as plt
 
 dga_file="../../data/dga/dga.txt"
 alexa_file="../../data/dga/top-1m.csv"
@@ -78,10 +79,31 @@ def get_feature_2gram():
 
 def do_nb(x_train, x_test, y_train, y_test):
     gnb = GaussianNB()
-    gnb.fit(x_train,y_train)  #使用朴素贝叶斯训练
-    y_pred=gnb.predict(x_test)   #将测试样本进行预测
-    print(classification_report(y_test, y_pred))  #与原本真实的标签测试集合进行对比，产生报告
-    print (metrics.confusion_matrix(y_test, y_pred)) #与原本真实的标签测试集合进行对比，产生混淆矩阵
+    gnb.fit(x_train,y_train) #使用朴素贝叶斯训练
+    y_pred = gnb.predict(x_test)
+    fpr, tpr, threshold = roc_curve(y_test, y_pred)
+    x = metrics.auc(fpr, tpr)
+    print(x)
+
+    roc_auc = auc(fpr, tpr)
+    plt.figure()
+    lw = 2
+    plt.figure(figsize=(10, 10))
+    plt.plot(fpr, tpr, color='darkorange',
+             lw=lw, label='ROC curve (area = %0.2f)' % roc_auc)  ###假正率为横坐标，真正率为纵坐标做曲线
+    plt.plot([0, 1], [0, 1], color='navy', lw=lw, linestyle='--')
+    plt.xlim([0.0, 1.0])
+    plt.ylim([0.0, 1.05])
+    plt.xlabel('False Positive Rate')
+    plt.ylabel('True Positive Rate')
+    plt.title("ROC curve of %s (AUC = %.4f)" % ('lightgbm', x))
+    plt.legend(loc="lower right")
+    plt.show()
+
+
+    # y_pred=gnb.predict(x_test)   #将测试样本进行预测
+    # print(classification_report(y_test, y_pred))  #与原本真实的标签测试集合进行对比，产生报告
+    # print (metrics.confusion_matrix(y_test, y_pred)) #与原本真实的标签测试集合进行对比，产生混淆矩阵
 
 
 if __name__ == "__main__":
