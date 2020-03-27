@@ -1,0 +1,13 @@
+2020-01-04 11:28:55,819 INFO model saved to neuralnetwork_classifier/saved_models\2018test20200104-112809\model_architecture.json
+2020-01-04 11:28:55,886 INFO model weights saved to neuralnetwork_classifier/saved_models\2018test20200104-112809\model_weights.h5
+2020-01-04 11:28:56,417 INFO network diagram saved to neuralnetwork_classifier/saved_models\2018test20200104-112809\model.png 
+2020-01-04 11:28:56,714 INFO 
+              precision    recall  f1-score   support
+
+         0.0       1.00      1.00      1.00      4389
+         1.0       0.00      0.00      0.00         0
+
+    accuracy                           1.00      4389
+   macro avg       0.50      0.50      0.50      4389
+weighted avg       1.00      1.00      1.00      4389
+

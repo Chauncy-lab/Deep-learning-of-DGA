@@ -1,0 +1,1 @@
+training 500 epoche, batch size 128. risultati peggiori della precedente.

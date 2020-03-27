@@ -1,0 +1,1007 @@
+Using TensorFlow backend.
+2017-12-06 12:21:52.421542: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-06 12:21:52.421614: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-06 12:21:52.421627: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+Train on 4488 samples, validate on 2212 samples
+Epoch 1/300
+Epoch 00000: val_loss improved from inf to 2.25013, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 2.5349 - acc: 0.3314 - val_loss: 2.2501 - val_acc: 0.3522
+Epoch 2/300
+Epoch 00001: val_loss improved from 2.25013 to 2.24442, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 2.2264 - acc: 0.3587 - val_loss: 2.2444 - val_acc: 0.3577
+Epoch 3/300
+Epoch 00002: val_loss improved from 2.24442 to 2.15442, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 2.1938 - acc: 0.3627 - val_loss: 2.1544 - val_acc: 0.3718
+Epoch 4/300
+Epoch 00003: val_loss improved from 2.15442 to 2.14580, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 2.1742 - acc: 0.3669 - val_loss: 2.1458 - val_acc: 0.3693
+Epoch 5/300
+Epoch 00004: val_loss improved from 2.14580 to 2.12588, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 2.1600 - acc: 0.3767 - val_loss: 2.1259 - val_acc: 0.3907
+Epoch 6/300
+Epoch 00005: val_loss improved from 2.12588 to 2.11149, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 2.1283 - acc: 0.3871 - val_loss: 2.1115 - val_acc: 0.3943
+Epoch 7/300
+Epoch 00006: val_loss improved from 2.11149 to 2.07257, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+3s - loss: 2.1055 - acc: 0.3916 - val_loss: 2.0726 - val_acc: 0.4010
+Epoch 8/300
+Epoch 00007: val_loss improved from 2.07257 to 2.05782, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 2.0908 - acc: 0.3965 - val_loss: 2.0578 - val_acc: 0.4021
+Epoch 9/300
+Epoch 00008: val_loss improved from 2.05782 to 2.03341, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 2.0678 - acc: 0.4031 - val_loss: 2.0334 - val_acc: 0.4114
+Epoch 10/300
+Epoch 00009: val_loss improved from 2.03341 to 2.01003, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 2.0463 - acc: 0.4092 - val_loss: 2.0100 - val_acc: 0.4178
+Epoch 11/300
+Epoch 00010: val_loss improved from 2.01003 to 1.98785, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 2.0229 - acc: 0.4151 - val_loss: 1.9879 - val_acc: 0.4213
+Epoch 12/300
+Epoch 00011: val_loss improved from 1.98785 to 1.95673, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.9978 - acc: 0.4211 - val_loss: 1.9567 - val_acc: 0.4289
+Epoch 13/300
+Epoch 00012: val_loss improved from 1.95673 to 1.90983, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.9658 - acc: 0.4242 - val_loss: 1.9098 - val_acc: 0.4399
+Epoch 14/300
+Epoch 00013: val_loss improved from 1.90983 to 1.89384, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+3s - loss: 1.9416 - acc: 0.4287 - val_loss: 1.8938 - val_acc: 0.4425
+Epoch 15/300
+Epoch 00014: val_loss improved from 1.89384 to 1.86781, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.9209 - acc: 0.4328 - val_loss: 1.8678 - val_acc: 0.4472
+Epoch 16/300
+Epoch 00015: val_loss improved from 1.86781 to 1.84879, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+3s - loss: 1.8903 - acc: 0.4398 - val_loss: 1.8488 - val_acc: 0.4529
+Epoch 17/300
+Epoch 00016: val_loss improved from 1.84879 to 1.82469, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.8751 - acc: 0.4428 - val_loss: 1.8247 - val_acc: 0.4541
+Epoch 18/300
+Epoch 00017: val_loss improved from 1.82469 to 1.80023, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.8505 - acc: 0.4481 - val_loss: 1.8002 - val_acc: 0.4640
+Epoch 19/300
+Epoch 00018: val_loss improved from 1.80023 to 1.77595, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.8335 - acc: 0.4519 - val_loss: 1.7760 - val_acc: 0.4710
+Epoch 20/300
+Epoch 00019: val_loss improved from 1.77595 to 1.75771, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.8148 - acc: 0.4563 - val_loss: 1.7577 - val_acc: 0.4691
+Epoch 21/300
+Epoch 00020: val_loss improved from 1.75771 to 1.73971, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.7930 - acc: 0.4597 - val_loss: 1.7397 - val_acc: 0.4743
+Epoch 22/300
+Epoch 00021: val_loss improved from 1.73971 to 1.72395, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.7795 - acc: 0.4611 - val_loss: 1.7239 - val_acc: 0.4747
+Epoch 23/300
+Epoch 00022: val_loss improved from 1.72395 to 1.70324, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.7648 - acc: 0.4646 - val_loss: 1.7032 - val_acc: 0.4791
+Epoch 24/300
+Epoch 00023: val_loss improved from 1.70324 to 1.69296, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.7509 - acc: 0.4685 - val_loss: 1.6930 - val_acc: 0.4816
+Epoch 25/300
+Epoch 00024: val_loss improved from 1.69296 to 1.66757, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+3s - loss: 1.7346 - acc: 0.4695 - val_loss: 1.6676 - val_acc: 0.4871
+Epoch 26/300
+Epoch 00025: val_loss did not improve
+4s - loss: 1.7254 - acc: 0.4699 - val_loss: 1.6706 - val_acc: 0.4827
+Epoch 27/300
+Epoch 00026: val_loss improved from 1.66757 to 1.64405, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.7080 - acc: 0.4743 - val_loss: 1.6440 - val_acc: 0.4913
+Epoch 28/300
+Epoch 00027: val_loss improved from 1.64405 to 1.63978, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.7034 - acc: 0.4750 - val_loss: 1.6398 - val_acc: 0.4925
+Epoch 29/300
+Epoch 00028: val_loss improved from 1.63978 to 1.62820, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.6822 - acc: 0.4804 - val_loss: 1.6282 - val_acc: 0.4892
+Epoch 30/300
+Epoch 00029: val_loss improved from 1.62820 to 1.59888, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+3s - loss: 1.6649 - acc: 0.4847 - val_loss: 1.5989 - val_acc: 0.5016
+Epoch 31/300
+Epoch 00030: val_loss did not improve
+3s - loss: 1.6534 - acc: 0.4853 - val_loss: 1.6153 - val_acc: 0.4932
+Epoch 32/300
+Epoch 00031: val_loss improved from 1.59888 to 1.56090, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.6415 - acc: 0.4889 - val_loss: 1.5609 - val_acc: 0.5119
+Epoch 33/300
+Epoch 00032: val_loss improved from 1.56090 to 1.54944, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+3s - loss: 1.6287 - acc: 0.4929 - val_loss: 1.5494 - val_acc: 0.5162
+Epoch 34/300
+Epoch 00033: val_loss improved from 1.54944 to 1.53846, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.6186 - acc: 0.4968 - val_loss: 1.5385 - val_acc: 0.5161
+Epoch 35/300
+Epoch 00034: val_loss improved from 1.53846 to 1.53163, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.5961 - acc: 0.5006 - val_loss: 1.5316 - val_acc: 0.5188
+Epoch 36/300
+Epoch 00035: val_loss improved from 1.53163 to 1.50441, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.5878 - acc: 0.5031 - val_loss: 1.5044 - val_acc: 0.5281
+Epoch 37/300
+Epoch 00036: val_loss improved from 1.50441 to 1.48785, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.5696 - acc: 0.5081 - val_loss: 1.4878 - val_acc: 0.5297
+Epoch 38/300
+Epoch 00037: val_loss improved from 1.48785 to 1.45711, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.5551 - acc: 0.5112 - val_loss: 1.4571 - val_acc: 0.5406
+Epoch 39/300
+Epoch 00038: val_loss did not improve
+3s - loss: 1.5542 - acc: 0.5130 - val_loss: 1.4594 - val_acc: 0.5398
+Epoch 40/300
+Epoch 00039: val_loss improved from 1.45711 to 1.44422, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.5254 - acc: 0.5192 - val_loss: 1.4442 - val_acc: 0.5389
+Epoch 41/300
+Epoch 00040: val_loss improved from 1.44422 to 1.42162, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.5230 - acc: 0.5193 - val_loss: 1.4216 - val_acc: 0.5456
+Epoch 42/300
+Epoch 00041: val_loss improved from 1.42162 to 1.40034, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.5120 - acc: 0.5232 - val_loss: 1.4003 - val_acc: 0.5550
+Epoch 43/300
+Epoch 00042: val_loss did not improve
+4s - loss: 1.5016 - acc: 0.5254 - val_loss: 1.4072 - val_acc: 0.5533
+Epoch 44/300
+Epoch 00043: val_loss improved from 1.40034 to 1.39789, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.4888 - acc: 0.5304 - val_loss: 1.3979 - val_acc: 0.5539
+Epoch 45/300
+Epoch 00044: val_loss improved from 1.39789 to 1.37783, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.4839 - acc: 0.5317 - val_loss: 1.3778 - val_acc: 0.5612
+Epoch 46/300
+Epoch 00045: val_loss improved from 1.37783 to 1.35538, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.4622 - acc: 0.5377 - val_loss: 1.3554 - val_acc: 0.5699
+Epoch 47/300
+Epoch 00046: val_loss improved from 1.35538 to 1.33404, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.4554 - acc: 0.5385 - val_loss: 1.3340 - val_acc: 0.5748
+Epoch 48/300
+Epoch 00047: val_loss did not improve
+4s - loss: 1.4378 - acc: 0.5445 - val_loss: 1.3405 - val_acc: 0.5732
+Epoch 49/300
+Epoch 00048: val_loss improved from 1.33404 to 1.32147, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.4355 - acc: 0.5450 - val_loss: 1.3215 - val_acc: 0.5779
+Epoch 50/300
+Epoch 00049: val_loss improved from 1.32147 to 1.29971, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.4191 - acc: 0.5487 - val_loss: 1.2997 - val_acc: 0.5864
+Epoch 51/300
+Epoch 00050: val_loss improved from 1.29971 to 1.29322, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.4054 - acc: 0.5511 - val_loss: 1.2932 - val_acc: 0.5874
+Epoch 52/300
+Epoch 00051: val_loss improved from 1.29322 to 1.28382, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.3971 - acc: 0.5551 - val_loss: 1.2838 - val_acc: 0.5896
+Epoch 53/300
+Epoch 00052: val_loss improved from 1.28382 to 1.26514, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.3843 - acc: 0.5604 - val_loss: 1.2651 - val_acc: 0.5947
+Epoch 54/300
+Epoch 00053: val_loss did not improve
+4s - loss: 1.3685 - acc: 0.5628 - val_loss: 1.2859 - val_acc: 0.5810
+Epoch 55/300
+Epoch 00054: val_loss improved from 1.26514 to 1.23870, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.3658 - acc: 0.5610 - val_loss: 1.2387 - val_acc: 0.6014
+Epoch 56/300
+Epoch 00055: val_loss improved from 1.23870 to 1.22977, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.3474 - acc: 0.5678 - val_loss: 1.2298 - val_acc: 0.6048
+Epoch 57/300
+Epoch 00056: val_loss improved from 1.22977 to 1.22512, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.3384 - acc: 0.5701 - val_loss: 1.2251 - val_acc: 0.6045
+Epoch 58/300
+Epoch 00057: val_loss improved from 1.22512 to 1.21185, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.3324 - acc: 0.5725 - val_loss: 1.2118 - val_acc: 0.6097
+Epoch 59/300
+Epoch 00058: val_loss improved from 1.21185 to 1.19995, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.3154 - acc: 0.5765 - val_loss: 1.1999 - val_acc: 0.6103
+Epoch 60/300
+Epoch 00059: val_loss improved from 1.19995 to 1.17738, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.3141 - acc: 0.5777 - val_loss: 1.1774 - val_acc: 0.6177
+Epoch 61/300
+Epoch 00060: val_loss improved from 1.17738 to 1.17633, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.3005 - acc: 0.5809 - val_loss: 1.1763 - val_acc: 0.6146
+Epoch 62/300
+Epoch 00061: val_loss improved from 1.17633 to 1.17096, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.2903 - acc: 0.5843 - val_loss: 1.1710 - val_acc: 0.6197
+Epoch 63/300
+Epoch 00062: val_loss improved from 1.17096 to 1.15229, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.2809 - acc: 0.5856 - val_loss: 1.1523 - val_acc: 0.6241
+Epoch 64/300
+Epoch 00063: val_loss improved from 1.15229 to 1.14006, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.2723 - acc: 0.5882 - val_loss: 1.1401 - val_acc: 0.6266
+Epoch 65/300
+Epoch 00064: val_loss did not improve
+4s - loss: 1.2667 - acc: 0.5899 - val_loss: 1.1587 - val_acc: 0.6197
+Epoch 66/300
+Epoch 00065: val_loss improved from 1.14006 to 1.11785, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.2582 - acc: 0.5929 - val_loss: 1.1179 - val_acc: 0.6360
+Epoch 67/300
+Epoch 00066: val_loss improved from 1.11785 to 1.11664, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.2470 - acc: 0.5951 - val_loss: 1.1166 - val_acc: 0.6312
+Epoch 68/300
+Epoch 00067: val_loss improved from 1.11664 to 1.09855, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.2424 - acc: 0.5958 - val_loss: 1.0985 - val_acc: 0.6404
+Epoch 69/300
+Epoch 00068: val_loss did not improve
+4s - loss: 1.2323 - acc: 0.6007 - val_loss: 1.1039 - val_acc: 0.6396
+Epoch 70/300
+Epoch 00069: val_loss improved from 1.09855 to 1.08976, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.2280 - acc: 0.6007 - val_loss: 1.0898 - val_acc: 0.6438
+Epoch 71/300
+Epoch 00070: val_loss did not improve
+3s - loss: 1.2182 - acc: 0.6037 - val_loss: 1.1064 - val_acc: 0.6335
+Epoch 72/300
+Epoch 00071: val_loss improved from 1.08976 to 1.07803, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.2131 - acc: 0.6042 - val_loss: 1.0780 - val_acc: 0.6477
+Epoch 73/300
+Epoch 00072: val_loss improved from 1.07803 to 1.07217, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.2026 - acc: 0.6074 - val_loss: 1.0722 - val_acc: 0.6498
+Epoch 74/300
+Epoch 00073: val_loss improved from 1.07217 to 1.05289, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.2002 - acc: 0.6091 - val_loss: 1.0529 - val_acc: 0.6555
+Epoch 75/300
+Epoch 00074: val_loss improved from 1.05289 to 1.05234, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.1922 - acc: 0.6112 - val_loss: 1.0523 - val_acc: 0.6575
+Epoch 76/300
+Epoch 00075: val_loss improved from 1.05234 to 1.03420, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+3s - loss: 1.1847 - acc: 0.6127 - val_loss: 1.0342 - val_acc: 0.6588
+Epoch 77/300
+Epoch 00076: val_loss improved from 1.03420 to 1.02342, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.1795 - acc: 0.6151 - val_loss: 1.0234 - val_acc: 0.6632
+Epoch 78/300
+Epoch 00077: val_loss did not improve
+4s - loss: 1.1761 - acc: 0.6165 - val_loss: 1.0532 - val_acc: 0.6552
+Epoch 79/300
+Epoch 00078: val_loss improved from 1.02342 to 1.02291, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.1630 - acc: 0.6198 - val_loss: 1.0229 - val_acc: 0.6632
+Epoch 80/300
+Epoch 00079: val_loss did not improve
+4s - loss: 1.1548 - acc: 0.6217 - val_loss: 1.0247 - val_acc: 0.6636
+Epoch 81/300
+Epoch 00080: val_loss improved from 1.02291 to 0.99564, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.1506 - acc: 0.6241 - val_loss: 0.9956 - val_acc: 0.6718
+Epoch 82/300
+Epoch 00081: val_loss did not improve
+4s - loss: 1.1512 - acc: 0.6206 - val_loss: 1.0094 - val_acc: 0.6677
+Epoch 83/300
+Epoch 00082: val_loss did not improve
+4s - loss: 1.1394 - acc: 0.6262 - val_loss: 1.0074 - val_acc: 0.6678
+Epoch 84/300
+Epoch 00083: val_loss improved from 0.99564 to 0.98601, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.1379 - acc: 0.6258 - val_loss: 0.9860 - val_acc: 0.6751
+Epoch 85/300
+Epoch 00084: val_loss improved from 0.98601 to 0.97840, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.1256 - acc: 0.6289 - val_loss: 0.9784 - val_acc: 0.6781
+Epoch 86/300
+Epoch 00085: val_loss improved from 0.97840 to 0.96703, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.1161 - acc: 0.6324 - val_loss: 0.9670 - val_acc: 0.6806
+Epoch 87/300
+Epoch 00086: val_loss improved from 0.96703 to 0.96157, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.1158 - acc: 0.6321 - val_loss: 0.9616 - val_acc: 0.6824
+Epoch 88/300
+Epoch 00087: val_loss did not improve
+3s - loss: 1.1141 - acc: 0.6308 - val_loss: 0.9827 - val_acc: 0.6739
+Epoch 89/300
+Epoch 00088: val_loss did not improve
+4s - loss: 1.1058 - acc: 0.6351 - val_loss: 0.9685 - val_acc: 0.6773
+Epoch 90/300
+Epoch 00089: val_loss improved from 0.96157 to 0.94155, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.1078 - acc: 0.6348 - val_loss: 0.9416 - val_acc: 0.6893
+Epoch 91/300
+Epoch 00090: val_loss did not improve
+4s - loss: 1.0983 - acc: 0.6383 - val_loss: 0.9479 - val_acc: 0.6878
+Epoch 92/300
+Epoch 00091: val_loss improved from 0.94155 to 0.92951, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+3s - loss: 1.0932 - acc: 0.6406 - val_loss: 0.9295 - val_acc: 0.6946
+Epoch 93/300
+Epoch 00092: val_loss improved from 0.92951 to 0.92214, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.0796 - acc: 0.6432 - val_loss: 0.9221 - val_acc: 0.6954
+Epoch 94/300
+Epoch 00093: val_loss did not improve
+4s - loss: 1.0799 - acc: 0.6431 - val_loss: 0.9242 - val_acc: 0.6969
+Epoch 95/300
+Epoch 00094: val_loss improved from 0.92214 to 0.91742, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+3s - loss: 1.0690 - acc: 0.6473 - val_loss: 0.9174 - val_acc: 0.6976
+Epoch 96/300
+Epoch 00095: val_loss improved from 0.91742 to 0.91262, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.0656 - acc: 0.6497 - val_loss: 0.9126 - val_acc: 0.7018
+Epoch 97/300
+Epoch 00096: val_loss did not improve
+4s - loss: 1.0627 - acc: 0.6491 - val_loss: 0.9205 - val_acc: 0.6977
+Epoch 98/300
+Epoch 00097: val_loss improved from 0.91262 to 0.89065, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.0531 - acc: 0.6509 - val_loss: 0.8906 - val_acc: 0.7044
+Epoch 99/300
+Epoch 00098: val_loss did not improve
+3s - loss: 1.0591 - acc: 0.6479 - val_loss: 0.8924 - val_acc: 0.7073
+Epoch 100/300
+Epoch 00099: val_loss did not improve
+4s - loss: 1.0513 - acc: 0.6505 - val_loss: 0.8956 - val_acc: 0.7053
+Epoch 101/300
+Epoch 00100: val_loss improved from 0.89065 to 0.89019, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.0508 - acc: 0.6518 - val_loss: 0.8902 - val_acc: 0.7091
+Epoch 102/300
+Epoch 00101: val_loss did not improve
+4s - loss: 1.0383 - acc: 0.6537 - val_loss: 0.8939 - val_acc: 0.7045
+Epoch 103/300
+Epoch 00102: val_loss improved from 0.89019 to 0.88373, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+5s - loss: 1.0383 - acc: 0.6547 - val_loss: 0.8837 - val_acc: 0.7100
+Epoch 104/300
+Epoch 00103: val_loss did not improve
+4s - loss: 1.0350 - acc: 0.6578 - val_loss: 0.8951 - val_acc: 0.7043
+Epoch 105/300
+Epoch 00104: val_loss did not improve
+4s - loss: 1.0280 - acc: 0.6563 - val_loss: 0.8849 - val_acc: 0.7042
+Epoch 106/300
+Epoch 00105: val_loss improved from 0.88373 to 0.85466, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.0254 - acc: 0.6581 - val_loss: 0.8547 - val_acc: 0.7183
+Epoch 107/300
+Epoch 00106: val_loss did not improve
+5s - loss: 1.0178 - acc: 0.6623 - val_loss: 0.8613 - val_acc: 0.7169
+Epoch 108/300
+Epoch 00107: val_loss improved from 0.85466 to 0.84944, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.0098 - acc: 0.6628 - val_loss: 0.8494 - val_acc: 0.7222
+Epoch 109/300
+Epoch 00108: val_loss improved from 0.84944 to 0.83509, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 1.0151 - acc: 0.6634 - val_loss: 0.8351 - val_acc: 0.7230
+Epoch 110/300
+Epoch 00109: val_loss did not improve
+5s - loss: 1.0107 - acc: 0.6640 - val_loss: 0.8502 - val_acc: 0.7211
+Epoch 111/300
+Epoch 00110: val_loss did not improve
+4s - loss: 1.0048 - acc: 0.6655 - val_loss: 0.8456 - val_acc: 0.7209
+Epoch 112/300
+Epoch 00111: val_loss did not improve
+4s - loss: 1.0037 - acc: 0.6650 - val_loss: 0.8397 - val_acc: 0.7238
+Epoch 113/300
+Epoch 00112: val_loss did not improve
+4s - loss: 0.9931 - acc: 0.6707 - val_loss: 0.8412 - val_acc: 0.7232
+Epoch 114/300
+Epoch 00113: val_loss did not improve
+4s - loss: 0.9987 - acc: 0.6670 - val_loss: 0.8368 - val_acc: 0.7282
+Epoch 115/300
+Epoch 00114: val_loss improved from 0.83509 to 0.81522, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.9828 - acc: 0.6732 - val_loss: 0.8152 - val_acc: 0.7303
+Epoch 116/300
+Epoch 00115: val_loss did not improve
+4s - loss: 0.9859 - acc: 0.6714 - val_loss: 0.8357 - val_acc: 0.7272
+Epoch 117/300
+Epoch 00116: val_loss did not improve
+5s - loss: 0.9837 - acc: 0.6715 - val_loss: 0.8175 - val_acc: 0.7311
+Epoch 118/300
+Epoch 00117: val_loss improved from 0.81522 to 0.80152, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.9778 - acc: 0.6725 - val_loss: 0.8015 - val_acc: 0.7397
+Epoch 119/300
+Epoch 00118: val_loss did not improve
+4s - loss: 0.9688 - acc: 0.6771 - val_loss: 0.8065 - val_acc: 0.7364
+Epoch 120/300
+Epoch 00119: val_loss did not improve
+4s - loss: 0.9683 - acc: 0.6784 - val_loss: 0.8043 - val_acc: 0.7382
+Epoch 121/300
+Epoch 00120: val_loss improved from 0.80152 to 0.78841, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+5s - loss: 0.9605 - acc: 0.6801 - val_loss: 0.7884 - val_acc: 0.7412
+Epoch 122/300
+Epoch 00121: val_loss improved from 0.78841 to 0.78658, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.9608 - acc: 0.6795 - val_loss: 0.7866 - val_acc: 0.7435
+Epoch 123/300
+Epoch 00122: val_loss improved from 0.78658 to 0.78051, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.9589 - acc: 0.6811 - val_loss: 0.7805 - val_acc: 0.7434
+Epoch 124/300
+Epoch 00123: val_loss did not improve
+5s - loss: 0.9491 - acc: 0.6835 - val_loss: 0.7890 - val_acc: 0.7417
+Epoch 125/300
+Epoch 00124: val_loss improved from 0.78051 to 0.77539, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.9490 - acc: 0.6833 - val_loss: 0.7754 - val_acc: 0.7464
+Epoch 126/300
+Epoch 00125: val_loss improved from 0.77539 to 0.76159, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.9438 - acc: 0.6858 - val_loss: 0.7616 - val_acc: 0.7507
+Epoch 127/300
+Epoch 00126: val_loss did not improve
+4s - loss: 0.9417 - acc: 0.6869 - val_loss: 0.7838 - val_acc: 0.7418
+Epoch 128/300
+Epoch 00127: val_loss improved from 0.76159 to 0.75735, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+5s - loss: 0.9416 - acc: 0.6861 - val_loss: 0.7574 - val_acc: 0.7516
+Epoch 129/300
+Epoch 00128: val_loss improved from 0.75735 to 0.75682, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.9338 - acc: 0.6882 - val_loss: 0.7568 - val_acc: 0.7508
+Epoch 130/300
+Epoch 00129: val_loss did not improve
+4s - loss: 0.9304 - acc: 0.6885 - val_loss: 0.7578 - val_acc: 0.7513
+Epoch 131/300
+Epoch 00130: val_loss improved from 0.75682 to 0.74500, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.9280 - acc: 0.6883 - val_loss: 0.7450 - val_acc: 0.7560
+Epoch 132/300
+Epoch 00131: val_loss improved from 0.74500 to 0.74082, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.9193 - acc: 0.6921 - val_loss: 0.7408 - val_acc: 0.7567
+Epoch 133/300
+Epoch 00132: val_loss did not improve
+4s - loss: 0.9163 - acc: 0.6941 - val_loss: 0.7455 - val_acc: 0.7543
+Epoch 134/300
+Epoch 00133: val_loss did not improve
+4s - loss: 0.9062 - acc: 0.6956 - val_loss: 0.7476 - val_acc: 0.7535
+Epoch 135/300
+Epoch 00134: val_loss improved from 0.74082 to 0.73529, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+5s - loss: 0.9076 - acc: 0.6968 - val_loss: 0.7353 - val_acc: 0.7580
+Epoch 136/300
+Epoch 00135: val_loss improved from 0.73529 to 0.73164, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.9071 - acc: 0.6955 - val_loss: 0.7316 - val_acc: 0.7622
+Epoch 137/300
+Epoch 00136: val_loss improved from 0.73164 to 0.72701, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.9065 - acc: 0.6965 - val_loss: 0.7270 - val_acc: 0.7605
+Epoch 138/300
+Epoch 00137: val_loss did not improve
+4s - loss: 0.9004 - acc: 0.6964 - val_loss: 0.7285 - val_acc: 0.7593
+Epoch 139/300
+Epoch 00138: val_loss improved from 0.72701 to 0.71305, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+5s - loss: 0.9041 - acc: 0.6987 - val_loss: 0.7131 - val_acc: 0.7645
+Epoch 140/300
+Epoch 00139: val_loss did not improve
+4s - loss: 0.8957 - acc: 0.6987 - val_loss: 0.7214 - val_acc: 0.7655
+Epoch 141/300
+Epoch 00140: val_loss improved from 0.71305 to 0.69840, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.8857 - acc: 0.7031 - val_loss: 0.6984 - val_acc: 0.7691
+Epoch 142/300
+Epoch 00141: val_loss did not improve
+4s - loss: 0.8854 - acc: 0.7030 - val_loss: 0.7187 - val_acc: 0.7607
+Epoch 143/300
+Epoch 00142: val_loss did not improve
+4s - loss: 0.8820 - acc: 0.7062 - val_loss: 0.7084 - val_acc: 0.7659
+Epoch 144/300
+Epoch 00143: val_loss did not improve
+4s - loss: 0.8770 - acc: 0.7072 - val_loss: 0.7044 - val_acc: 0.7714
+Epoch 145/300
+Epoch 00144: val_loss improved from 0.69840 to 0.69000, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.8772 - acc: 0.7049 - val_loss: 0.6900 - val_acc: 0.7734
+Epoch 146/300
+Epoch 00145: val_loss did not improve
+4s - loss: 0.8746 - acc: 0.7063 - val_loss: 0.7017 - val_acc: 0.7717
+Epoch 147/300
+Epoch 00146: val_loss improved from 0.69000 to 0.68728, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.8797 - acc: 0.7062 - val_loss: 0.6873 - val_acc: 0.7737
+Epoch 148/300
+Epoch 00147: val_loss improved from 0.68728 to 0.68647, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+5s - loss: 0.8673 - acc: 0.7087 - val_loss: 0.6865 - val_acc: 0.7746
+Epoch 149/300
+Epoch 00148: val_loss improved from 0.68647 to 0.67915, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.8604 - acc: 0.7111 - val_loss: 0.6791 - val_acc: 0.7766
+Epoch 150/300
+Epoch 00149: val_loss did not improve
+4s - loss: 0.8594 - acc: 0.7122 - val_loss: 0.6972 - val_acc: 0.7703
+Epoch 151/300
+Epoch 00150: val_loss did not improve
+4s - loss: 0.8518 - acc: 0.7139 - val_loss: 0.6830 - val_acc: 0.7771
+Epoch 152/300
+Epoch 00151: val_loss improved from 0.67915 to 0.66892, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+5s - loss: 0.8503 - acc: 0.7156 - val_loss: 0.6689 - val_acc: 0.7799
+Epoch 153/300
+Epoch 00152: val_loss improved from 0.66892 to 0.66030, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.8534 - acc: 0.7155 - val_loss: 0.6603 - val_acc: 0.7835
+Epoch 154/300
+Epoch 00153: val_loss improved from 0.66030 to 0.65983, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.8542 - acc: 0.7128 - val_loss: 0.6598 - val_acc: 0.7838
+Epoch 155/300
+Epoch 00154: val_loss improved from 0.65983 to 0.65954, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+5s - loss: 0.8422 - acc: 0.7178 - val_loss: 0.6595 - val_acc: 0.7864
+Epoch 156/300
+Epoch 00155: val_loss improved from 0.65954 to 0.65164, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.8373 - acc: 0.7216 - val_loss: 0.6516 - val_acc: 0.7880
+Epoch 157/300
+Epoch 00156: val_loss did not improve
+4s - loss: 0.8350 - acc: 0.7201 - val_loss: 0.6549 - val_acc: 0.7840
+Epoch 158/300
+Epoch 00157: val_loss did not improve
+4s - loss: 0.8429 - acc: 0.7171 - val_loss: 0.6561 - val_acc: 0.7866
+Epoch 159/300
+Epoch 00158: val_loss did not improve
+4s - loss: 0.8366 - acc: 0.7185 - val_loss: 0.6654 - val_acc: 0.7807
+Epoch 160/300
+Epoch 00159: val_loss did not improve
+4s - loss: 0.8314 - acc: 0.7217 - val_loss: 0.6585 - val_acc: 0.7831
+Epoch 161/300
+Epoch 00160: val_loss improved from 0.65164 to 0.63973, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.8319 - acc: 0.7216 - val_loss: 0.6397 - val_acc: 0.7919
+Epoch 162/300
+Epoch 00161: val_loss did not improve
+5s - loss: 0.8252 - acc: 0.7235 - val_loss: 0.6466 - val_acc: 0.7865
+Epoch 163/300
+Epoch 00162: val_loss improved from 0.63973 to 0.63623, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.8206 - acc: 0.7252 - val_loss: 0.6362 - val_acc: 0.7907
+Epoch 164/300
+Epoch 00163: val_loss did not improve
+4s - loss: 0.8302 - acc: 0.7216 - val_loss: 0.6461 - val_acc: 0.7882
+Epoch 165/300
+Epoch 00164: val_loss improved from 0.63623 to 0.63572, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.8207 - acc: 0.7265 - val_loss: 0.6357 - val_acc: 0.7904
+Epoch 166/300
+Epoch 00165: val_loss did not improve
+4s - loss: 0.8118 - acc: 0.7268 - val_loss: 0.6401 - val_acc: 0.7878
+Epoch 167/300
+Epoch 00166: val_loss improved from 0.63572 to 0.63432, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.8145 - acc: 0.7275 - val_loss: 0.6343 - val_acc: 0.7927
+Epoch 168/300
+Epoch 00167: val_loss improved from 0.63432 to 0.61806, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.8143 - acc: 0.7270 - val_loss: 0.6181 - val_acc: 0.7994
+Epoch 169/300
+Epoch 00168: val_loss did not improve
+5s - loss: 0.8086 - acc: 0.7285 - val_loss: 0.6240 - val_acc: 0.7958
+Epoch 170/300
+Epoch 00169: val_loss improved from 0.61806 to 0.61379, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.8070 - acc: 0.7296 - val_loss: 0.6138 - val_acc: 0.7980
+Epoch 171/300
+Epoch 00170: val_loss did not improve
+4s - loss: 0.8047 - acc: 0.7304 - val_loss: 0.6203 - val_acc: 0.7965
+Epoch 172/300
+Epoch 00171: val_loss did not improve
+4s - loss: 0.8045 - acc: 0.7320 - val_loss: 0.6290 - val_acc: 0.7963
+Epoch 173/300
+Epoch 00172: val_loss did not improve
+4s - loss: 0.8049 - acc: 0.7291 - val_loss: 0.6267 - val_acc: 0.7933
+Epoch 174/300
+Epoch 00173: val_loss did not improve
+4s - loss: 0.7955 - acc: 0.7340 - val_loss: 0.6265 - val_acc: 0.7911
+Epoch 175/300
+Epoch 00174: val_loss improved from 0.61379 to 0.60859, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.7922 - acc: 0.7325 - val_loss: 0.6086 - val_acc: 0.8006
+Epoch 176/300
+Epoch 00175: val_loss improved from 0.60859 to 0.59878, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.7948 - acc: 0.7341 - val_loss: 0.5988 - val_acc: 0.8055
+Epoch 177/300
+Epoch 00176: val_loss did not improve
+4s - loss: 0.7947 - acc: 0.7334 - val_loss: 0.6017 - val_acc: 0.8031
+Epoch 178/300
+Epoch 00177: val_loss improved from 0.59878 to 0.59650, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.7849 - acc: 0.7374 - val_loss: 0.5965 - val_acc: 0.8042
+Epoch 179/300
+Epoch 00178: val_loss did not improve
+4s - loss: 0.7825 - acc: 0.7362 - val_loss: 0.5984 - val_acc: 0.8039
+Epoch 180/300
+Epoch 00179: val_loss did not improve
+5s - loss: 0.7780 - acc: 0.7377 - val_loss: 0.5967 - val_acc: 0.8032
+Epoch 181/300
+Epoch 00180: val_loss did not improve
+4s - loss: 0.7802 - acc: 0.7376 - val_loss: 0.6088 - val_acc: 0.7968
+Epoch 182/300
+Epoch 00181: val_loss did not improve
+4s - loss: 0.7838 - acc: 0.7372 - val_loss: 0.6347 - val_acc: 0.7873
+Epoch 183/300
+Epoch 00182: val_loss improved from 0.59650 to 0.57564, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.7785 - acc: 0.7384 - val_loss: 0.5756 - val_acc: 0.8125
+Epoch 184/300
+Epoch 00183: val_loss did not improve
+5s - loss: 0.7756 - acc: 0.7406 - val_loss: 0.5897 - val_acc: 0.8078
+Epoch 185/300
+Epoch 00184: val_loss did not improve
+4s - loss: 0.7742 - acc: 0.7400 - val_loss: 0.5889 - val_acc: 0.8033
+Epoch 186/300
+Epoch 00185: val_loss did not improve
+4s - loss: 0.7781 - acc: 0.7399 - val_loss: 0.5910 - val_acc: 0.8075
+Epoch 187/300
+Epoch 00186: val_loss improved from 0.57564 to 0.57231, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+5s - loss: 0.7709 - acc: 0.7416 - val_loss: 0.5723 - val_acc: 0.8135
+Epoch 188/300
+Epoch 00187: val_loss did not improve
+4s - loss: 0.7670 - acc: 0.7434 - val_loss: 0.5909 - val_acc: 0.8034
+Epoch 189/300
+Epoch 00188: val_loss did not improve
+4s - loss: 0.7684 - acc: 0.7413 - val_loss: 0.5752 - val_acc: 0.8115
+Epoch 190/300
+Epoch 00189: val_loss did not improve
+4s - loss: 0.7679 - acc: 0.7419 - val_loss: 0.5861 - val_acc: 0.8091
+Epoch 191/300
+Epoch 00190: val_loss improved from 0.57231 to 0.56444, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+3s - loss: 0.7601 - acc: 0.7435 - val_loss: 0.5644 - val_acc: 0.8156
+Epoch 192/300
+Epoch 00191: val_loss did not improve
+4s - loss: 0.7650 - acc: 0.7442 - val_loss: 0.5698 - val_acc: 0.8126
+Epoch 193/300
+Epoch 00192: val_loss did not improve
+4s - loss: 0.7582 - acc: 0.7447 - val_loss: 0.5651 - val_acc: 0.8166
+Epoch 194/300
+Epoch 00193: val_loss did not improve
+4s - loss: 0.7578 - acc: 0.7472 - val_loss: 0.5700 - val_acc: 0.8147
+Epoch 195/300
+Epoch 00194: val_loss improved from 0.56444 to 0.55089, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.7541 - acc: 0.7487 - val_loss: 0.5509 - val_acc: 0.8219
+Epoch 196/300
+Epoch 00195: val_loss did not improve
+4s - loss: 0.7493 - acc: 0.7490 - val_loss: 0.5603 - val_acc: 0.8156
+Epoch 197/300
+Epoch 00196: val_loss did not improve
+3s - loss: 0.7443 - acc: 0.7502 - val_loss: 0.5683 - val_acc: 0.8121
+Epoch 198/300
+Epoch 00197: val_loss did not improve
+3s - loss: 0.7477 - acc: 0.7510 - val_loss: 0.5594 - val_acc: 0.8165
+Epoch 199/300
+Epoch 00198: val_loss improved from 0.55089 to 0.55068, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.7444 - acc: 0.7498 - val_loss: 0.5507 - val_acc: 0.8182
+Epoch 200/300
+Epoch 00199: val_loss improved from 0.55068 to 0.54836, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.7411 - acc: 0.7501 - val_loss: 0.5484 - val_acc: 0.8233
+Epoch 201/300
+Epoch 00200: val_loss improved from 0.54836 to 0.54756, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.7384 - acc: 0.7510 - val_loss: 0.5476 - val_acc: 0.8217
+Epoch 202/300
+Epoch 00201: val_loss improved from 0.54756 to 0.54553, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.7394 - acc: 0.7515 - val_loss: 0.5455 - val_acc: 0.8229
+Epoch 203/300
+Epoch 00202: val_loss did not improve
+3s - loss: 0.7338 - acc: 0.7529 - val_loss: 0.5671 - val_acc: 0.8166
+Epoch 204/300
+Epoch 00203: val_loss improved from 0.54553 to 0.54412, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.7404 - acc: 0.7518 - val_loss: 0.5441 - val_acc: 0.8220
+Epoch 205/300
+Epoch 00204: val_loss did not improve
+4s - loss: 0.7329 - acc: 0.7534 - val_loss: 0.5515 - val_acc: 0.8223
+Epoch 206/300
+Epoch 00205: val_loss improved from 0.54412 to 0.54001, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.7329 - acc: 0.7542 - val_loss: 0.5400 - val_acc: 0.8245
+Epoch 207/300
+Epoch 00206: val_loss did not improve
+4s - loss: 0.7283 - acc: 0.7564 - val_loss: 0.5413 - val_acc: 0.8227
+Epoch 208/300
+Epoch 00207: val_loss did not improve
+4s - loss: 0.7292 - acc: 0.7528 - val_loss: 0.5505 - val_acc: 0.8203
+Epoch 209/300
+Epoch 00208: val_loss improved from 0.54001 to 0.53654, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.7281 - acc: 0.7577 - val_loss: 0.5365 - val_acc: 0.8233
+Epoch 210/300
+Epoch 00209: val_loss improved from 0.53654 to 0.53099, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.7238 - acc: 0.7577 - val_loss: 0.5310 - val_acc: 0.8242
+Epoch 211/300
+Epoch 00210: val_loss did not improve
+4s - loss: 0.7216 - acc: 0.7576 - val_loss: 0.5384 - val_acc: 0.8242
+Epoch 212/300
+Epoch 00211: val_loss did not improve
+4s - loss: 0.7182 - acc: 0.7594 - val_loss: 0.5364 - val_acc: 0.8242
+Epoch 213/300
+Epoch 00212: val_loss improved from 0.53099 to 0.52662, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.7195 - acc: 0.7596 - val_loss: 0.5266 - val_acc: 0.8269
+Epoch 214/300
+Epoch 00213: val_loss improved from 0.52662 to 0.51773, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.7200 - acc: 0.7576 - val_loss: 0.5177 - val_acc: 0.8300
+Epoch 215/300
+Epoch 00214: val_loss did not improve
+4s - loss: 0.7139 - acc: 0.7611 - val_loss: 0.5223 - val_acc: 0.8293
+Epoch 216/300
+Epoch 00215: val_loss improved from 0.51773 to 0.51591, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.7079 - acc: 0.7631 - val_loss: 0.5159 - val_acc: 0.8348
+Epoch 217/300
+Epoch 00216: val_loss did not improve
+4s - loss: 0.7060 - acc: 0.7641 - val_loss: 0.5299 - val_acc: 0.8245
+Epoch 218/300
+Epoch 00217: val_loss did not improve
+3s - loss: 0.7089 - acc: 0.7615 - val_loss: 0.5204 - val_acc: 0.8288
+Epoch 219/300
+Epoch 00218: val_loss did not improve
+4s - loss: 0.7090 - acc: 0.7621 - val_loss: 0.5203 - val_acc: 0.8274
+Epoch 220/300
+Epoch 00219: val_loss improved from 0.51591 to 0.51035, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.7019 - acc: 0.7634 - val_loss: 0.5104 - val_acc: 0.8324
+Epoch 221/300
+Epoch 00220: val_loss improved from 0.51035 to 0.50848, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.7073 - acc: 0.7639 - val_loss: 0.5085 - val_acc: 0.8325
+Epoch 222/300
+Epoch 00221: val_loss did not improve
+3s - loss: 0.7035 - acc: 0.7649 - val_loss: 0.5189 - val_acc: 0.8298
+Epoch 223/300
+Epoch 00222: val_loss improved from 0.50848 to 0.50525, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.6979 - acc: 0.7655 - val_loss: 0.5053 - val_acc: 0.8373
+Epoch 224/300
+Epoch 00223: val_loss did not improve
+4s - loss: 0.6987 - acc: 0.7648 - val_loss: 0.5060 - val_acc: 0.8354
+Epoch 225/300
+Epoch 00224: val_loss did not improve
+4s - loss: 0.6992 - acc: 0.7657 - val_loss: 0.5281 - val_acc: 0.8219
+Epoch 226/300
+Epoch 00225: val_loss did not improve
+4s - loss: 0.7025 - acc: 0.7638 - val_loss: 0.5082 - val_acc: 0.8336
+Epoch 227/300
+Epoch 00226: val_loss improved from 0.50525 to 0.50135, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.6936 - acc: 0.7678 - val_loss: 0.5014 - val_acc: 0.8352
+Epoch 228/300
+Epoch 00227: val_loss did not improve
+4s - loss: 0.6908 - acc: 0.7692 - val_loss: 0.5083 - val_acc: 0.8337
+Epoch 229/300
+Epoch 00228: val_loss did not improve
+4s - loss: 0.6884 - acc: 0.7696 - val_loss: 0.5137 - val_acc: 0.8322
+Epoch 230/300
+Epoch 00229: val_loss did not improve
+3s - loss: 0.6811 - acc: 0.7717 - val_loss: 0.5124 - val_acc: 0.8315
+Epoch 231/300
+Epoch 00230: val_loss improved from 0.50135 to 0.49914, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.6894 - acc: 0.7681 - val_loss: 0.4991 - val_acc: 0.8366
+Epoch 232/300
+Epoch 00231: val_loss improved from 0.49914 to 0.48609, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.6879 - acc: 0.7687 - val_loss: 0.4861 - val_acc: 0.8420
+Epoch 233/300
+Epoch 00232: val_loss did not improve
+3s - loss: 0.6827 - acc: 0.7709 - val_loss: 0.5053 - val_acc: 0.8346
+Epoch 234/300
+Epoch 00233: val_loss did not improve
+4s - loss: 0.6846 - acc: 0.7714 - val_loss: 0.4947 - val_acc: 0.8396
+Epoch 235/300
+Epoch 00234: val_loss did not improve
+4s - loss: 0.6844 - acc: 0.7693 - val_loss: 0.4899 - val_acc: 0.8387
+Epoch 236/300
+Epoch 00235: val_loss improved from 0.48609 to 0.48421, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.6802 - acc: 0.7724 - val_loss: 0.4842 - val_acc: 0.8432
+Epoch 237/300
+Epoch 00236: val_loss improved from 0.48421 to 0.48353, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.6755 - acc: 0.7745 - val_loss: 0.4835 - val_acc: 0.8416
+Epoch 238/300
+Epoch 00237: val_loss did not improve
+4s - loss: 0.6788 - acc: 0.7728 - val_loss: 0.4994 - val_acc: 0.8378
+Epoch 239/300
+Epoch 00238: val_loss did not improve
+4s - loss: 0.6771 - acc: 0.7734 - val_loss: 0.4894 - val_acc: 0.8410
+Epoch 240/300
+Epoch 00239: val_loss improved from 0.48353 to 0.47746, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.6693 - acc: 0.7772 - val_loss: 0.4775 - val_acc: 0.8444
+Epoch 241/300
+Epoch 00240: val_loss did not improve
+4s - loss: 0.6692 - acc: 0.7741 - val_loss: 0.4793 - val_acc: 0.8425
+Epoch 242/300
+Epoch 00241: val_loss did not improve
+4s - loss: 0.6775 - acc: 0.7747 - val_loss: 0.4893 - val_acc: 0.8416
+Epoch 243/300
+Epoch 00242: val_loss did not improve
+4s - loss: 0.6696 - acc: 0.7749 - val_loss: 0.4894 - val_acc: 0.8398
+Epoch 244/300
+Epoch 00243: val_loss improved from 0.47746 to 0.47311, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.6680 - acc: 0.7746 - val_loss: 0.4731 - val_acc: 0.8456
+Epoch 245/300
+Epoch 00244: val_loss did not improve
+3s - loss: 0.6713 - acc: 0.7764 - val_loss: 0.4757 - val_acc: 0.8426
+Epoch 246/300
+Epoch 00245: val_loss did not improve
+4s - loss: 0.6624 - acc: 0.7785 - val_loss: 0.4771 - val_acc: 0.8429
+Epoch 247/300
+Epoch 00246: val_loss improved from 0.47311 to 0.46870, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.6621 - acc: 0.7776 - val_loss: 0.4687 - val_acc: 0.8471
+Epoch 248/300
+Epoch 00247: val_loss did not improve
+4s - loss: 0.6619 - acc: 0.7802 - val_loss: 0.4725 - val_acc: 0.8455
+Epoch 249/300
+Epoch 00248: val_loss did not improve
+4s - loss: 0.6588 - acc: 0.7796 - val_loss: 0.4720 - val_acc: 0.8457
+Epoch 250/300
+Epoch 00249: val_loss did not improve
+3s - loss: 0.6570 - acc: 0.7792 - val_loss: 0.4700 - val_acc: 0.8460
+Epoch 251/300
+Epoch 00250: val_loss improved from 0.46870 to 0.46851, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.6632 - acc: 0.7789 - val_loss: 0.4685 - val_acc: 0.8476
+Epoch 252/300
+Epoch 00251: val_loss improved from 0.46851 to 0.46658, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.6566 - acc: 0.7803 - val_loss: 0.4666 - val_acc: 0.8483
+Epoch 253/300
+Epoch 00252: val_loss improved from 0.46658 to 0.46407, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.6528 - acc: 0.7799 - val_loss: 0.4641 - val_acc: 0.8485
+Epoch 254/300
+Epoch 00253: val_loss improved from 0.46407 to 0.45927, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.6565 - acc: 0.7806 - val_loss: 0.4593 - val_acc: 0.8524
+Epoch 255/300
+Epoch 00254: val_loss improved from 0.45927 to 0.45908, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.6553 - acc: 0.7811 - val_loss: 0.4591 - val_acc: 0.8520
+Epoch 256/300
+Epoch 00255: val_loss did not improve
+4s - loss: 0.6521 - acc: 0.7821 - val_loss: 0.4677 - val_acc: 0.8476
+Epoch 257/300
+Epoch 00256: val_loss improved from 0.45908 to 0.45899, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.6460 - acc: 0.7835 - val_loss: 0.4590 - val_acc: 0.8496
+Epoch 258/300
+Epoch 00257: val_loss did not improve
+3s - loss: 0.6526 - acc: 0.7821 - val_loss: 0.4643 - val_acc: 0.8485
+Epoch 259/300
+Epoch 00258: val_loss did not improve
+4s - loss: 0.6449 - acc: 0.7830 - val_loss: 0.4671 - val_acc: 0.8458
+Epoch 260/300
+Epoch 00259: val_loss did not improve
+4s - loss: 0.6463 - acc: 0.7839 - val_loss: 0.4597 - val_acc: 0.8487
+Epoch 261/300
+Epoch 00260: val_loss improved from 0.45899 to 0.44733, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.6443 - acc: 0.7842 - val_loss: 0.4473 - val_acc: 0.8540
+Epoch 262/300
+Epoch 00261: val_loss did not improve
+4s - loss: 0.6516 - acc: 0.7813 - val_loss: 0.4629 - val_acc: 0.8493
+Epoch 263/300
+Epoch 00262: val_loss did not improve
+4s - loss: 0.6443 - acc: 0.7835 - val_loss: 0.4503 - val_acc: 0.8527
+Epoch 264/300
+Epoch 00263: val_loss did not improve
+4s - loss: 0.6421 - acc: 0.7835 - val_loss: 0.4609 - val_acc: 0.8489
+Epoch 265/300
+Epoch 00264: val_loss did not improve
+4s - loss: 0.6445 - acc: 0.7862 - val_loss: 0.4590 - val_acc: 0.8502
+Epoch 266/300
+Epoch 00265: val_loss did not improve
+4s - loss: 0.6405 - acc: 0.7862 - val_loss: 0.4669 - val_acc: 0.8450
+Epoch 267/300
+Epoch 00266: val_loss did not improve
+3s - loss: 0.6338 - acc: 0.7871 - val_loss: 0.4489 - val_acc: 0.8519
+Epoch 268/300
+Epoch 00267: val_loss improved from 0.44733 to 0.42909, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+3s - loss: 0.6423 - acc: 0.7849 - val_loss: 0.4291 - val_acc: 0.8613
+Epoch 269/300
+Epoch 00268: val_loss did not improve
+3s - loss: 0.6334 - acc: 0.7886 - val_loss: 0.4801 - val_acc: 0.8399
+Epoch 270/300
+Epoch 00269: val_loss did not improve
+3s - loss: 0.6456 - acc: 0.7865 - val_loss: 0.4477 - val_acc: 0.8534
+Epoch 271/300
+Epoch 00270: val_loss did not improve
+4s - loss: 0.6361 - acc: 0.7872 - val_loss: 0.4461 - val_acc: 0.8572
+Epoch 272/300
+Epoch 00271: val_loss did not improve
+4s - loss: 0.6361 - acc: 0.7875 - val_loss: 0.4435 - val_acc: 0.8539
+Epoch 273/300
+Epoch 00272: val_loss did not improve
+4s - loss: 0.6310 - acc: 0.7909 - val_loss: 0.4429 - val_acc: 0.8539
+Epoch 274/300
+Epoch 00273: val_loss did not improve
+4s - loss: 0.6382 - acc: 0.7875 - val_loss: 0.4467 - val_acc: 0.8538
+Epoch 275/300
+Epoch 00274: val_loss did not improve
+4s - loss: 0.6278 - acc: 0.7902 - val_loss: 0.4546 - val_acc: 0.8512
+Epoch 276/300
+Epoch 00275: val_loss did not improve
+3s - loss: 0.6311 - acc: 0.7906 - val_loss: 0.4574 - val_acc: 0.8506
+Epoch 277/300
+Epoch 00276: val_loss did not improve
+4s - loss: 0.6238 - acc: 0.7934 - val_loss: 0.4500 - val_acc: 0.8496
+Epoch 278/300
+Epoch 00277: val_loss did not improve
+4s - loss: 0.6243 - acc: 0.7928 - val_loss: 0.4345 - val_acc: 0.8576
+Epoch 279/300
+Epoch 00278: val_loss did not improve
+4s - loss: 0.6265 - acc: 0.7905 - val_loss: 0.4444 - val_acc: 0.8527
+Epoch 280/300
+Epoch 00279: val_loss did not improve
+4s - loss: 0.6272 - acc: 0.7895 - val_loss: 0.4337 - val_acc: 0.8598
+Epoch 281/300
+Epoch 00280: val_loss did not improve
+4s - loss: 0.6201 - acc: 0.7919 - val_loss: 0.4291 - val_acc: 0.8621
+Epoch 282/300
+Epoch 00281: val_loss did not improve
+4s - loss: 0.6233 - acc: 0.7932 - val_loss: 0.4316 - val_acc: 0.8591
+Epoch 283/300
+Epoch 00282: val_loss did not improve
+4s - loss: 0.6206 - acc: 0.7932 - val_loss: 0.4351 - val_acc: 0.8569
+Epoch 284/300
+Epoch 00283: val_loss improved from 0.42909 to 0.42184, saving model to autoencoder_experiments/20171206-122149/weightalternative_dgagan.py:358: RuntimeWarning: divide by zero encountered in log
+  preds = np.log(preds) / temperature
+s/autoencoder.h5
+3s - loss: 0.6224 - acc: 0.7927 - val_loss: 0.4218 - val_acc: 0.8632
+Epoch 285/300
+Epoch 00284: val_loss did not improve
+4s - loss: 0.6188 - acc: 0.7929 - val_loss: 0.4295 - val_acc: 0.8600
+Epoch 286/300
+Epoch 00285: val_loss did not improve
+3s - loss: 0.6237 - acc: 0.7916 - val_loss: 0.4421 - val_acc: 0.8538
+Epoch 287/300
+Epoch 00286: val_loss did not improve
+3s - loss: 0.6144 - acc: 0.7947 - val_loss: 0.4266 - val_acc: 0.8605
+Epoch 288/300
+Epoch 00287: val_loss did not improve
+4s - loss: 0.6174 - acc: 0.7948 - val_loss: 0.4365 - val_acc: 0.8563
+Epoch 289/300
+Epoch 00288: val_loss improved from 0.42184 to 0.41708, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.6128 - acc: 0.7947 - val_loss: 0.4171 - val_acc: 0.8633
+Epoch 290/300
+Epoch 00289: val_loss did not improve
+4s - loss: 0.6133 - acc: 0.7954 - val_loss: 0.4371 - val_acc: 0.8570
+Epoch 291/300
+Epoch 00290: val_loss did not improve
+3s - loss: 0.6126 - acc: 0.7963 - val_loss: 0.4346 - val_acc: 0.8586
+Epoch 292/300
+Epoch 00291: val_loss did not improve
+3s - loss: 0.6115 - acc: 0.7950 - val_loss: 0.4446 - val_acc: 0.8530
+Epoch 293/300
+Epoch 00292: val_loss did not improve
+3s - loss: 0.6186 - acc: 0.7930 - val_loss: 0.4309 - val_acc: 0.8594
+Epoch 294/300
+Epoch 00293: val_loss did not improve
+3s - loss: 0.6081 - acc: 0.7958 - val_loss: 0.4411 - val_acc: 0.8563
+Epoch 295/300
+Epoch 00294: val_loss improved from 0.41708 to 0.41601, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.6134 - acc: 0.7953 - val_loss: 0.4160 - val_acc: 0.8646
+Epoch 296/300
+Epoch 00295: val_loss did not improve
+3s - loss: 0.6108 - acc: 0.7956 - val_loss: 0.4294 - val_acc: 0.8564
+Epoch 297/300
+Epoch 00296: val_loss did not improve
+3s - loss: 0.6072 - acc: 0.7982 - val_loss: 0.4191 - val_acc: 0.8610
+Epoch 298/300
+Epoch 00297: val_loss did not improve
+4s - loss: 0.6043 - acc: 0.7988 - val_loss: 0.4279 - val_acc: 0.8611
+Epoch 299/300
+Epoch 00298: val_loss did not improve
+3s - loss: 0.6054 - acc: 0.7980 - val_loss: 0.4167 - val_acc: 0.8654
+Epoch 300/300
+Epoch 00299: val_loss improved from 0.41601 to 0.40890, saving model to autoencoder_experiments/20171206-122149/weights/autoencoder.h5
+4s - loss: 0.6089 - acc: 0.7969 - val_loss: 0.4089 - val_acc: 0.8653
+X_test
+[[[ 0.  0.  0. ...,  0.  0.  0.]
+  [ 0.  0.  0. ...,  0.  0.  0.]
+  [ 0.  1.  0. ...,  0.  0.  0.]
+  ..., 
+  [ 0.  0.  0. ...,  0.  0.  0.]
+  [ 0.  0.  0. ...,  0.  0.  0.]
+  [ 0.  0.  0. ...,  0.  0.  0.]]
+
+ [[ 1.  0.  0. ...,  0.  0.  0.]
+  [ 0.  0.  0. ...,  0.  0.  0.]
+  [ 0.  0.  0. ...,  0.  0.  0.]
+  ..., 
+  [ 0.  0.  0. ...,  0.  0.  0.]
+  [ 0.  0.  0. ...,  0.  0.  0.]
+  [ 0.  0.  0. ...,  0.  0.  0.]]
+
+ [[ 1.  0.  0. ...,  0.  0.  0.]
+  [ 0.  0.  0. ...,  0.  0.  0.]
+  [ 0.  0.  0. ...,  0.  0.  0.]
+  ..., 
+  [ 0.  0.  0. ...,  0.  0.  0.]
+  [ 0.  0.  0. ...,  0.  0.  0.]
+  [ 0.  0.  0. ...,  0.  0.  0.]]
+
+ ..., 
+ [[ 1.  0.  0. ...,  0.  0.  0.]
+  [ 1.  0.  0. ...,  0.  0.  0.]
+  [ 1.  0.  0. ...,  0.  0.  0.]
+  ..., 
+  [ 0.  0.  0. ...,  0.  0.  0.]
+  [ 0.  0.  0. ...,  0.  0.  0.]
+  [ 0.  0.  0. ...,  0.  0.  0.]]
+
+ [[ 0.  0.  0. ...,  0.  0.  0.]
+  [ 0.  1.  0. ...,  0.  0.  0.]
+  [ 0.  0.  0. ...,  0.  0.  0.]
+  ..., 
+  [ 0.  0.  0. ...,  0.  0.  0.]
+  [ 0.  0.  0. ...,  0.  0.  0.]
+  [ 0.  0.  0. ...,  0.  0.  0.]]
+
+ [[ 1.  0.  0. ...,  0.  0.  0.]
+  [ 1.  0.  0. ...,  0.  0.  0.]
+  [ 1.  0.  0. ...,  0.  0.  0.]
+  ..., 
+  [ 0.  0.  0. ...,  0.  0.  0.]
+  [ 0.  0.  0. ...,  0.  0.  0.]
+  [ 0.  0.  0. ...,  0.  0.  0.]]]
+results
+reakingbaastore
+verrccayuorums
+wortenosttters
+thedroner
+hintingbiitiuul
+ieeetraaacional
+kalymnosoll
+dashp72
+vianet
+lessines
+frttaairencerrd
+apnastock
+bloooorbhhumano
+4th-sense
+ceeditera
+theyuongfaamer
+vineyarruuub
+mojoescorts
+zlxfong
+suyyblog
+biokplus
+crated
+nobanki
+bluenntailes
+utopolis
+monetczados
+cheateescirole
+artetinnmasters
+ventknesquare
+lednobanno
+hivelives
+icinadeclisping
+coneaaitsalert
+cobaaatctrfgria
+hogform
+paalament
+happythhools
+etednnt
+pmeeaacofitries
+calenrario-36j
+onpaneseotool
+seosuc
+fiatcamper
+razinsolie
+woucourirr
+allnnsllowers
+bemergroup
+wheel-size
+haupengtsengouu
+psrtets24

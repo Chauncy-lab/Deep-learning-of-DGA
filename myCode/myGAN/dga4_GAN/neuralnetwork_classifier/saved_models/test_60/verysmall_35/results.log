@@ -1,0 +1,26 @@
+2017-09-25 13:17:09,095 INFO model saved to saved_models/test_60/verysmall_35/model_architecture.json
+2017-09-25 13:17:09,404 INFO network diagram saved to saved_models/test_60/verysmall_35/model.png 
+2017-09-25 13:17:12,676 INFO 
+             precision    recall  f1-score   support
+
+        DGA       0.86      0.92      0.89     28002
+      Legit       0.91      0.84      0.88     26886
+
+avg / total       0.89      0.88      0.88     54888
+
+2017-09-25 13:19:13,357 INFO 
+             precision    recall  f1-score   support
+
+        DGA       0.86      0.92      0.89     28103
+      Legit       0.91      0.84      0.88     26785
+
+avg / total       0.89      0.88      0.88     54888
+
+2017-09-25 13:21:57,514 INFO 
+             precision    recall  f1-score   support
+
+        DGA       0.86      0.92      0.89     27963
+      Legit       0.91      0.85      0.88     26925
+
+avg / total       0.89      0.88      0.88     54888
+
