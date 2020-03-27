@@ -85,9 +85,9 @@ def do_xgboost(x_train, x_test, y_train, y_test):
     # print('XGBClassifier: auc = %f ' % (t_auc))
 
 if __name__ == "__main__":
-    print("text feature & xgboost")
-    x_train, x_test, y_train, y_test = get_feature()
-    do_xgboost(x_train, x_test, y_train, y_test)
+    # print("text feature & xgboost")
+    # x_train, x_test, y_train, y_test = get_feature()
+    # do_xgboost(x_train, x_test, y_train, y_test)
 
     print("2-gram & XGBoost")
     x_train, x_test, y_train, y_test = get_feature_2gram()

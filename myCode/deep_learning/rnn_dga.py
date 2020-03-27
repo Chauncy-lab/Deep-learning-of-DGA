@@ -5,6 +5,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from sklearn import metrics
 
+from sklearn.feature_extraction.text import CountVectorizer
+
 dga_file="../../data/dga/dga.txt"
 alexa_file="../../data/dga/top-1m.csv"
 
@@ -39,6 +41,28 @@ def get_feature_charseq():
     x_train, x_test, y_train, y_test=train_test_split(x,y,test_size=0.4)
 
     return x_train, x_test, y_train, y_test
+
+
+def get_feature_2gram():
+    alexa=load_alexa()
+    dga=load_dga()
+    x=alexa+dga
+    max_features=10000
+    y=[0]*len(alexa)+[1]*len(dga)
+
+    CV = CountVectorizer(
+                                    ngram_range=(2, 2),
+                                    token_pattern=r'\w',
+                                    decode_error='ignore',
+                                    strip_accents='ascii',
+                                    max_features=max_features,
+                                    stop_words='english',
+                                    max_df=1.0,
+                                    min_df=1)
+    x = CV.fit_transform(x)
+    x_train, x_test, y_train, y_test=train_test_split(x,y,test_size=0.4)
+
+    return x_train.toarray(), x_test.toarray(), y_train, y_test
 
 def do_rnn(trainX, testX, trainY, testY):
     max_document_length=64

@@ -139,6 +139,7 @@ def do_xgboost(x_train, x_test, y_train, y_test):
     plt.legend(loc="lower right")
     plt.show()
 
+
 def do_mlp(x_train, x_test, y_train, y_test):
 
     global max_features
@@ -216,6 +217,7 @@ def do_rnn(trainX, testX, trainY, testY):
     plt.legend(loc="lower right")
     plt.show()
 
+
 if __name__ == "__main__":
     print("compare dga")
 
@@ -235,7 +237,7 @@ if __name__ == "__main__":
     # do_xgboost(x_train, x_test, y_train, y_test)
 
     # print( "text feature & mlp")
-    # x_train, x_test, y_train, y_test = get_feature()
+    # # x_train, x_test, y_train, y_test = get_feature()
     # do_mlp(x_train, x_test, y_train, y_test)
     print("2-gram & mlp")
     x_train, x_test, y_train, y_test = get_feature_2gram()
@@ -244,4 +246,5 @@ if __name__ == "__main__":
     # print("charseq & rnn")
     # x_train, x_test, y_train, y_test = get_feature_charseq()
     # do_rnn(x_train, x_test, y_train, y_test)
-
+    # print("2-gram & rnn")
+    # x_train, x_test, y_train, y_test = get_feature_2gram()
