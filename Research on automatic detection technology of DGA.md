@@ -8,7 +8,7 @@
 
 ​	先看以下一张图了解为何会出现DGA域名检测技术
 
-![image-20200215102947312](C:\Users\xingchi\AppData\Roaming\Typora\typora-user-images\image-20200215102947312.png)
+![image-20200215102947312](D:\code\PycharmProjects\Deep-learning-of-DGA\image\image-20200215102947312.png)
 
 ​	由此，安全人员与攻击者开始在人工智能领域中展开漫长的博弈~
 
