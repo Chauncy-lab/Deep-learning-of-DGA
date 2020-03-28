@@ -1,1 +1,0 @@
-training estensivo GAN con le tecniche di chollet.

@@ -1,6 +1,0 @@
-2017-09-25 03:03:48,291 INFO model saved to saved_models/test_100/pieraz_30/model_architecture.json
-2017-09-25 03:03:48,580 INFO network diagram saved to saved_models/test_100/pieraz_30/model.png 
-2017-09-25 09:32:20,453 INFO model saved to saved_models/test_100/pieraz_40/model_architecture.json
-2017-09-25 09:32:20,749 INFO network diagram saved to saved_models/test_100/pieraz_40/model.png 
-2017-09-25 09:48:42,872 INFO model saved to saved_models/test_100/pieraz_50/model_architecture.json
-2017-09-25 09:48:43,308 INFO network diagram saved to saved_models/test_100/pieraz_50/model.png 

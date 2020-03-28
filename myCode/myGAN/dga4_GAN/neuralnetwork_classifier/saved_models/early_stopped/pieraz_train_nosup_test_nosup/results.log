@@ -1,9 +1,0 @@
-2017-09-19 17:41:04,131 DEBUG model init at saved models/pieraz train:nosup test:nosup 
-2017-09-19 17:41:05,318 INFO 
-             precision    recall  f1-score   support
-
-        DGA       0.99      0.99      0.99     13204
-      Legit       0.99      0.99      0.99     20278
-
-avg / total       0.99      0.99      0.99     33482
-

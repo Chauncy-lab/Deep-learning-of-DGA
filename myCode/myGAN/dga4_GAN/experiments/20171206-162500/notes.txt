@@ -1,1 +1,0 @@
-training estensivo su kula. controllare se dopo 100 epoche l'output della gan ha senso o no.
