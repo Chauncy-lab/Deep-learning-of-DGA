@@ -22,6 +22,7 @@
 
 （二）提取2-Gram
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2019120314121264.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5OTM2NDM0,size_16,color_FFFFFF,t_70)
+
 #### 训练、预测和验证XGBoost
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191203141305305.png)
 #### 验证结果
@@ -29,8 +30,7 @@
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191203141451139.png)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191203141704601.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5OTM2NDM0,size_16,color_FFFFFF,t_70)
 
-
 （二）2-Gram特征的XGBoost
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191203141731653.png)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191203141606524.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5OTM2NDM0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](D:\code\PycharmProjects\Deep-learning-of-DGA\image\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5OTM2NDM0,size_16,color_FFFFFF,t_70)
 源代码在GitHub上：[xb_dga.py](https://github.com/Xandra-chan/Deep-learning-of-DGA/blob/master/code/deep_learning/xb_dga.py)
