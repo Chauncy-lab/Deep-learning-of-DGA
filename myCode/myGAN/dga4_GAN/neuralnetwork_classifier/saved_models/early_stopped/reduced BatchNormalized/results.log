@@ -1,0 +1,23 @@
+2017-09-21 08:49:02,972 INFO Epoch: 0, acc: 0.779989, loss: 0.477814, mean_absolute_error: 0.313613, val_mean_absolute_error: 0.511956, val_acc: 0.488048, val_loss: 8.160186
+2017-09-21 08:49:58,698 INFO Epoch: 1, acc: 0.785417, loss: 0.461626, mean_absolute_error: 0.301886, val_mean_absolute_error: 0.511977, val_acc: 0.488024, val_loss: 8.162125
+2017-09-21 08:50:54,770 INFO Epoch: 2, acc: 0.785906, loss: 0.452751, mean_absolute_error: 0.296370, val_mean_absolute_error: 0.511974, val_acc: 0.488024, val_loss: 8.161458
+2017-09-21 08:51:50,821 INFO Epoch: 3, acc: 0.787300, loss: 0.446340, mean_absolute_error: 0.292202, val_mean_absolute_error: 0.511998, val_acc: 0.488024, val_loss: 8.162149
+2017-09-21 08:51:50,823 INFO model saved to saved models/reduced BatchNormalized/model_architecture.json
+2017-09-21 08:51:50,863 INFO model weights saved to saved models/reduced BatchNormalized/model_weights.h5
+2017-09-21 08:51:51,000 INFO network diagram saved to saved models/reduced BatchNormalized/model.png 
+2017-09-21 08:51:51,943 INFO 
+             precision    recall  f1-score   support
+
+        DGA       0.84      0.87      0.86     21289
+      Legit       0.86      0.83      0.85     20293
+
+avg / total       0.85      0.85      0.85     41582
+
+2017-09-21 11:59:07,372 INFO 
+             precision    recall  f1-score   support
+
+        DGA       0.84      0.87      0.86     21171
+      Legit       0.86      0.83      0.85     20411
+
+avg / total       0.85      0.85      0.85     41582
+

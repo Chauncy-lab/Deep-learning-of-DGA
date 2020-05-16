@@ -1,0 +1,9 @@
+experiments/20171213-132900
+Epoch is 0
+Number of batches 216
+Batch size: 32
+domains_batch size:	(32, 15, 38)
+generated domains shape:	(32, 7, 38)
+training set shape	(32, 15, 38)
+target shape (32, 1)
+Generated sample: ['mmmmmmm', 'wwwwwww', 'xxxxxxx', '5kkkkkk', 'bbbbbbb'] 

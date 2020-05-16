@@ -1,0 +1,5 @@
+model_checkpoint_path: "autoencoder_epoch003_0.1027.model"
+all_model_checkpoint_paths: "autoencoder_epoch000_0.3895.model"
+all_model_checkpoint_paths: "autoencoder_epoch001_0.1602.model"
+all_model_checkpoint_paths: "autoencoder_epoch002_0.1181.model"
+all_model_checkpoint_paths: "autoencoder_epoch003_0.1027.model"

@@ -1,0 +1,247 @@
+experiments/20171214-115041
+____________________________________________________________________________________________________
+Layer (type)                     Output Shape          Param #     Connected to                     
+====================================================================================================
+Discriminator_Input (InputLayer) (None, 15, 38)        0                                            
+____________________________________________________________________________________________________
+discr_conv0 (Conv1D)             (None, 15, 20)        1540        Discriminator_Input[0][0]        
+____________________________________________________________________________________________________
+discr_conv1 (Conv1D)             (None, 15, 10)        1150        Discriminator_Input[0][0]        
+____________________________________________________________________________________________________
+leaky_re_lu_1 (LeakyReLU)        (None, 15, 20)        0           discr_conv0[0][0]                
+____________________________________________________________________________________________________
+leaky_re_lu_2 (LeakyReLU)        (None, 15, 10)        0           discr_conv1[0][0]                
+____________________________________________________________________________________________________
+discr_dropout0 (Dropout)         (None, 15, 20)        0           leaky_re_lu_1[0][0]              
+____________________________________________________________________________________________________
+discr_dropout1 (Dropout)         (None, 15, 10)        0           leaky_re_lu_2[0][0]              
+____________________________________________________________________________________________________
+concatenate_1 (Concatenate)      (None, 15, 30)        0           discr_dropout0[0][0]             
+                                                                   discr_dropout1[0][0]             
+____________________________________________________________________________________________________
+flatten_1 (Flatten)              (None, 450)           0           concatenate_1[0][0]              
+____________________________________________________________________________________________________
+dense_1 (Dense)                  (None, 1)             451         flatten_1[0][0]                  
+====================================================================================================
+Total params: 3,141
+Trainable params: 3,141
+Non-trainable params: 0
+____________________________________________________________________________________________________
+____________________________________________________________________________________________________
+Layer (type)                     Output Shape          Param #     Connected to                     
+====================================================================================================
+Generator_Input (InputLayer)     (None, 38)            0                                            
+____________________________________________________________________________________________________
+gen_repeate_vec (RepeatVector)   (None, 15, 38)        0           Generator_Input[0][0]            
+____________________________________________________________________________________________________
+gen_LSTM (LSTM)                  (None, 15, 38)        11704       gen_repeate_vec[0][0]            
+____________________________________________________________________________________________________
+dropout_1 (Dropout)              (None, 15, 38)        0           gen_LSTM[0][0]                   
+____________________________________________________________________________________________________
+gen_conv0 (Conv1D)               (None, 15, 20)        1540        dropout_1[0][0]                  
+____________________________________________________________________________________________________
+gen_conv1 (Conv1D)               (None, 15, 10)        1150        dropout_1[0][0]                  
+____________________________________________________________________________________________________
+leaky_re_lu_3 (LeakyReLU)        (None, 15, 20)        0           gen_conv0[0][0]                  
+____________________________________________________________________________________________________
+leaky_re_lu_4 (LeakyReLU)        (None, 15, 10)        0           gen_conv1[0][0]                  
+____________________________________________________________________________________________________
+gen_dropout0 (Dropout)           (None, 15, 20)        0           leaky_re_lu_3[0][0]              
+____________________________________________________________________________________________________
+gen_dropout1 (Dropout)           (None, 15, 10)        0           leaky_re_lu_4[0][0]              
+____________________________________________________________________________________________________
+concatenate_2 (Concatenate)      (None, 15, 30)        0           gen_dropout0[0][0]               
+                                                                   gen_dropout1[0][0]               
+____________________________________________________________________________________________________
+decoder_end (TimeDistributed)    (None, 15, 38)        1178        concatenate_2[0][0]              
+====================================================================================================
+Total params: 15,572
+Trainable params: 15,572
+Non-trainable params: 0
+____________________________________________________________________________________________________
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+Generator (Model)            (None, 15, 38)            15572     
+_________________________________________________________________
+Discriminator (Model)        (None, 1)                 3141      
+=================================================================
+Total params: 18,713
+Trainable params: 18,713
+Non-trainable params: 0
+_________________________________________________________________
+Epoch is 0
+Number of batches 216
+Batch size: 32
+domains_batch size:	(32, 15, 38)
+generated domains shape:	(32, 15, 38)
+training set shape	(32, 15, 38)
+target shape (32, 1)
+epoch 0	mini-batch 9	[ DISC	loss : 0.686647 ]	[ ADV	loss : 0.702586 ]
+Generated sample: ['wzzzwwwwwlllll0', 'bbbbbbbbbbbbbbb', 'uuuuuuqqqqqqqqq', 'jxxxxxxxxxxxxxx', '333333333333333'] 
+epoch 0	mini-batch 19	[ DISC	loss : 0.675167 ]	[ ADV	loss : 0.710495 ]
+Generated sample: ['bxxxxxxxxxxxxxl', '666666666666666', 'bbbbbbbbbbbbbbb', 'lxxxxxxxxxxxxxx', 'llllllllllllllv'] 
+epoch 0	mini-batch 29	[ DISC	loss : 0.671146 ]	[ ADV	loss : 0.712640 ]
+Generated sample: ['yyyyyyyyyyyyyyy', 'r-------------1', 'wwaaaaaaaaaaaa3', '88888888888888', 'dddllllllllllll'] 
+epoch 0	mini-batch 39	[ DISC	loss : 0.667849 ]	[ ADV	loss : 0.719633 ]
+Generated sample: ['ssssssssssssssx', 'b33333333333333', '99999999999999b', 'bbbbbbbbbbbbbbj', 'bbbb33333333bby'] 
+epoch 0	mini-batch 49	[ DISC	loss : 0.663010 ]	[ ADV	loss : 0.722647 ]
+Generated sample: ['z88888888888888', 'jjjjjjjjjjjjjjj', '88888888888888', 'asssssssssssssz', 'lllllllllllllll'] 
+epoch 0	mini-batch 59	[ DISC	loss : 0.652751 ]	[ ADV	loss : 0.742138 ]
+Generated sample: ['888fffffffffffx', 'lllllllllllllll', '666666666666666', 'rrrrrrrrrrrrrrj', 'rrccccccccccccc'] 
+epoch 0	mini-batch 69	[ DISC	loss : 0.646750 ]	[ ADV	loss : 0.745353 ]
+Generated sample: ['8llllllll888888', 'cccccccccccccc', 'xxxxxxxxxxxxxx6', 'rrrrrrrrrrrrrry', 'rrrrrrrrrrrrrrr'] 
+epoch 0	mini-batch 79	[ DISC	loss : 0.639059 ]	[ ADV	loss : 0.750040 ]
+Generated sample: ['88888888888888', 'jjjjjjcccccccc', '8sssssssssssssr', 'lxxxxxxxxxxxxxx', 'r'] 
+epoch 0	mini-batch 89	[ DISC	loss : 0.626482 ]	[ ADV	loss : 0.755384 ]
+Generated sample: ['', 'lllllllllllllll', 'yjjjjjjjjjjjjj', '88xxxxxxxxxxxxx', '66666666666666d'] 
+epoch 0	mini-batch 99	[ DISC	loss : 0.634662 ]	[ ADV	loss : 0.753292 ]
+Generated sample: ['', 'sssssssppppppp', 'lllllllllllllll', 'rrrrrrrrrrrrrrr', 'ccccc'] 
+epoch 0	mini-batch 109	[ DISC	loss : 0.664037 ]	[ ADV	loss : 0.741413 ]
+Generated sample: ['lllllllllllllll', 'cccccccccccccc', '', 'lllll', ''] 
+epoch 0	mini-batch 119	[ DISC	loss : 0.715932 ]	[ ADV	loss : 0.681729 ]
+Generated sample: ['rrrrrrrrrrrrrrr', '', 'eeeeeeeeeeeeeee', 'xxxxxxxxxxxxxxx', ''] 
+epoch 0	mini-batch 129	[ DISC	loss : 0.839568 ]	[ ADV	loss : 0.681710 ]
+Generated sample: ['', 'lllllllllllllll', 'ee666666666666a', 'lllllllllllllll', 'cc'] 
+epoch 0	mini-batch 139	[ DISC	loss : 0.808037 ]	[ ADV	loss : 0.586526 ]
+Generated sample: ['', '', '', '', 'lllllll'] 
+epoch 0	mini-batch 149	[ DISC	loss : 0.979483 ]	[ ADV	loss : 0.575343 ]
+Generated sample: ['', '', '', '', ''] 
+epoch 0	mini-batch 159	[ DISC	loss : 0.995955 ]	[ ADV	loss : 0.523801 ]
+Generated sample: ['', '', 'lllllllllllllll', '', ''] 
+epoch 0	mini-batch 169	[ DISC	loss : 1.067211 ]	[ ADV	loss : 0.604515 ]
+Generated sample: ['', '', '', '', ''] 
+epoch 0	mini-batch 179	[ DISC	loss : 0.848750 ]	[ ADV	loss : 0.620559 ]
+Generated sample: ['', '', 'lllllllllllllll', '', ''] 
+epoch 0	mini-batch 189	[ DISC	loss : 0.789647 ]	[ ADV	loss : 0.602577 ]
+Generated sample: ['', '', '', '', ''] 
+epoch 0	mini-batch 199	[ DISC	loss : 0.734136 ]	[ ADV	loss : 0.698173 ]
+Generated sample: ['', '', '', '', ''] 
+epoch 0	mini-batch 209	[ DISC	loss : 0.659226 ]	[ ADV	loss : 0.750672 ]
+Generated sample: ['rrrr', '', '', '', ''] 
+Epoch is 1
+Number of batches 216
+epoch 1	mini-batch 9	[ DISC	loss : 0.600786 ]	[ ADV	loss : 0.782881 ]
+Generated sample: ['', 'rrrrr', '', '', ''] 
+epoch 1	mini-batch 19	[ DISC	loss : 0.602812 ]	[ ADV	loss : 0.752990 ]
+Generated sample: ['', '', '', '', ''] 
+epoch 1	mini-batch 29	[ DISC	loss : 1.024482 ]	[ ADV	loss : 0.535394 ]
+Generated sample: ['rrrrrrrrr', 'rrrrrrrrrrrrrrr', 'rrrrrrrrrrrrrr', 'rrrrrrrrrrrrrrr', 'sssrrrrrrrrrrrr'] 
+epoch 1	mini-batch 39	[ DISC	loss : 1.132124 ]	[ ADV	loss : 0.472910 ]
+Generated sample: ['rrrrrrrrrrrrrrr', 'rrrrrrrrrrrrrrr', 'rrrrrrrrrrrrrrr', 'rrrrrrrrrrrrrrr', 'rrrrrrrrrrrrrrr'] 
+epoch 1	mini-batch 49	[ DISC	loss : 0.971838 ]	[ ADV	loss : 0.500171 ]
+Generated sample: ['rrrrrrrrrrrrrr', 'rrrrrrrrrrrrrrr', 'rrrrrrrrrrrrrrr', 'rrrrrrrrrrrr', 'rrrrrrrrrrrrrrr'] 
+epoch 1	mini-batch 59	[ DISC	loss : 0.865635 ]	[ ADV	loss : 0.572789 ]
+Generated sample: ['rrrrrrrrrrrrrrr', 'rrrrrrrrrrrrrrr', 'rrrrrrrrrrrrrrr', 'rrrrrrrrrrrrrrr', 'rrrrrrrrrrrrr'] 
+epoch 1	mini-batch 69	[ DISC	loss : 0.794063 ]	[ ADV	loss : 0.632184 ]
+Generated sample: ['rrrrrrrrrrrrrrr', 'rrrrrrrrrrrrrrr', 'rrrrrrrrrrrrrr', 'rrrrrrrrrrrrrrr', 'rrrrrrrrrrrrrrr'] 
+epoch 1	mini-batch 79	[ DISC	loss : 0.708449 ]	[ ADV	loss : 0.685241 ]
+Generated sample: ['rrrrrrrrrrrrrrr', 'rrrrrrrrrrrrrrr', 'rrrrrrrrrrrrrrr', 'rrrrrrrrrrrrrrr', 'rrrrrrrrrrrrrrr'] 
+epoch 1	mini-batch 89	[ DISC	loss : 0.638146 ]	[ ADV	loss : 0.774414 ]
+Generated sample: ['rrrrrrrrrrrrrrr', 'rrrrrrrrrrrrrr', 'rrrrrrrrrrrrrr', 'rrrrrrrrrrrr', 'rrrrrrrrrrrrrrr'] 
+epoch 1	mini-batch 99	[ DISC	loss : 0.561156 ]	[ ADV	loss : 0.823069 ]
+Generated sample: ['rrrrrrrrrrrrrrr', 'rrrrrrrrrrrrrrr', 'rrrrrrrrrrrrrrr', 'rrrrrrrrrrrrrrr', 'rrrrrrrrrrrrrr'] 
+epoch 1	mini-batch 109	[ DISC	loss : 0.512641 ]	[ ADV	loss : 0.802584 ]
+Generated sample: ['rrrrrrrrrrr', 'rrrrrrrrrrrrr', 'srrrrrrrrrrrrrr', 'rrrrrrrrrrrrrr', 'rrrrrrrrrrrrrrr'] 
+epoch 1	mini-batch 119	[ DISC	loss : 0.589499 ]	[ ADV	loss : 0.751666 ]
+Generated sample: ['sssssssssssssss', 'rrrrrrrrrrrrrrr', 'rrrrrrrrrrrrrrr', 'ssssrrrrrrrrrrr', 'rrrrrrrrrr'] 
+epoch 1	mini-batch 129	[ DISC	loss : 0.717846 ]	[ ADV	loss : 0.671513 ]
+Generated sample: ['rrrrrrrrr', 'rrrrrrrrr', 'sssssssssssssss', 'rrrrrrrrrrrrrr', 'rrrrrrrrr'] 
+epoch 1	mini-batch 139	[ DISC	loss : 0.925408 ]	[ ADV	loss : 0.600624 ]
+Generated sample: ['sssssssssssssss', 'sssssssssssss', 'sssssssssssssss', 'ssssssssss', 'sssssssssssssss'] 
+epoch 1	mini-batch 149	[ DISC	loss : 0.847619 ]	[ ADV	loss : 0.592535 ]
+Generated sample: ['sssssssssss', 'sssssssssssssss', 'sssssssssssssss', 'sssssssssssssss', 'sssssssssssssss'] 
+epoch 1	mini-batch 159	[ DISC	loss : 0.753949 ]	[ ADV	loss : 0.651161 ]
+Generated sample: ['sssssssssss', 'sssssssssssssss', 'sssssssssssssss', 'sssssssssssss', 'sssssssss'] 
+epoch 1	mini-batch 169	[ DISC	loss : 0.715947 ]	[ ADV	loss : 0.680719 ]
+Generated sample: ['sssssssssssssss', 'ssssssssss', 'sssssssssss', 's', 'sssssssssssss'] 
+epoch 1	mini-batch 179	[ DISC	loss : 0.862253 ]	[ ADV	loss : 0.529331 ]
+Generated sample: ['sssssssssss', 'eesssssssssssss', 'sssssssssssssss', 'sssssssssssiiis', 'ssssssssssss'] 
+epoch 1	mini-batch 189	[ DISC	loss : 1.346794 ]	[ ADV	loss : 0.302720 ]
+Generated sample: ['ttttttttis', 'tttttttt', 'iiiiiiiiiiiiiii', 'iiiiiiiiiiiiiii', 'tttttiiiiii'] 
+epoch 1	mini-batch 199	[ DISC	loss : 1.671221 ]	[ ADV	loss : 0.251077 ]
+Generated sample: ['tttttiiiii', 'ttttttttt', 'atttiiiiiiiii', 'iiiiiiiiiiiiiii', 'ttiiiiiiii'] 
+epoch 1	mini-batch 209	[ DISC	loss : 1.688626 ]	[ ADV	loss : 0.301712 ]
+Generated sample: ['eetttttttt', 'eettttttti', 'tttttttttttiit', 'eeiiiiiiiiiiiii', 'tttttt'] 
+Epoch is 2
+Number of batches 216
+epoch 2	mini-batch 9	[ DISC	loss : 1.819617 ]	[ ADV	loss : 0.250239 ]
+Generated sample: ['tiiiiiiiiiiiiii', 'iiiiiiiiiiiiiii', 'iiiiiiiiiiiiiii', 'eeeeeeetttttttt', 'eeeeeeeeeeeeeee'] 
+epoch 2	mini-batch 19	[ DISC	loss : 1.958253 ]	[ ADV	loss : 0.329314 ]
+Generated sample: ['iiiiiiiiiiiiiii', 'iiiiiiiiiiiiiii', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeet', 'eeeeeeeeeeeeeee'] 
+epoch 2	mini-batch 29	[ DISC	loss : 1.730572 ]	[ ADV	loss : 0.275448 ]
+Generated sample: ['iiiiiiiiiiiiiii', 'eeeeeeeeeeeeeee', 'iiiiiiiiiiiiiii', 'iiiiiiitttttttt', 'eeeeetttttiiiii'] 
+epoch 2	mini-batch 39	[ DISC	loss : 1.773258 ]	[ ADV	loss : 0.281998 ]
+Generated sample: ['eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'iiiiiiiiiiiiiii', 'iiiiiiiiiiiiiii'] 
+epoch 2	mini-batch 49	[ DISC	loss : 1.659186 ]	[ ADV	loss : 0.289957 ]
+Generated sample: ['eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee'] 
+epoch 2	mini-batch 59	[ DISC	loss : 1.481410 ]	[ ADV	loss : 0.339738 ]
+Generated sample: ['eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee'] 
+epoch 2	mini-batch 69	[ DISC	loss : 1.278775 ]	[ ADV	loss : 0.399057 ]
+Generated sample: ['eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee'] 
+epoch 2	mini-batch 79	[ DISC	loss : 1.113144 ]	[ ADV	loss : 0.552624 ]
+Generated sample: ['eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee'] 
+epoch 2	mini-batch 89	[ DISC	loss : 0.893282 ]	[ ADV	loss : 0.601526 ]
+Generated sample: ['eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee'] 
+epoch 2	mini-batch 99	[ DISC	loss : 0.760076 ]	[ ADV	loss : 0.718656 ]
+Generated sample: ['eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee'] 
+epoch 2	mini-batch 109	[ DISC	loss : 0.610240 ]	[ ADV	loss : 0.874202 ]
+Generated sample: ['eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee'] 
+epoch 2	mini-batch 119	[ DISC	loss : 0.427916 ]	[ ADV	loss : 0.947298 ]
+Generated sample: ['eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee'] 
+epoch 2	mini-batch 129	[ DISC	loss : 0.417599 ]	[ ADV	loss : 1.166992 ]
+Generated sample: ['eeeeeeeeeeeeeee', 'eeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee'] 
+epoch 2	mini-batch 139	[ DISC	loss : 0.336520 ]	[ ADV	loss : 1.185885 ]
+Generated sample: ['eeeeeeeeeeeeee', 'eeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee'] 
+epoch 2	mini-batch 149	[ DISC	loss : 0.508896 ]	[ ADV	loss : 1.051404 ]
+Generated sample: ['eeeeeeeeeeeeeee', 'eeeeeeeee', 'eeeeeeeee', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee'] 
+epoch 2	mini-batch 159	[ DISC	loss : 0.673917 ]	[ ADV	loss : 0.937786 ]
+Generated sample: ['e', '', 'e', 'eeeeeeeeeeeeeee', 'eeeeeeeeeeeeeee'] 
+epoch 2	mini-batch 169	[ DISC	loss : 1.067156 ]	[ ADV	loss : 0.732085 ]
+Generated sample: ['t', 'eeeettttttttttt', 'eeeeeeeeeeeeeee', '', 't'] 
+epoch 2	mini-batch 179	[ DISC	loss : 0.828428 ]	[ ADV	loss : 0.820496 ]
+Generated sample: ['', 'eeeeeeeeeeeeeee', 'tttttt', 'ttttttt', ''] 
+epoch 2	mini-batch 189	[ DISC	loss : 0.881425 ]	[ ADV	loss : 0.781144 ]
+Generated sample: ['', 't', 't', 'tttttttt', ''] 
+epoch 2	mini-batch 199	[ DISC	loss : 0.886604 ]	[ ADV	loss : 0.777119 ]
+Generated sample: ['t', 'ttttttttt', 'ttttttttttt', 'tttttttt', 't'] 
+epoch 2	mini-batch 209	[ DISC	loss : 0.684543 ]	[ ADV	loss : 0.853206 ]
+Generated sample: ['tttt', 't', 'ttttttttt', 'ttttttttttt', 't'] 
+Epoch is 3
+Number of batches 216
+epoch 3	mini-batch 9	[ DISC	loss : 0.568571 ]	[ ADV	loss : 1.110336 ]
+Generated sample: ['ttttttttttt', 'ttt', 'tttttttttttt', 'ttttttttttt', 'ttttttttttttt'] 
+epoch 3	mini-batch 19	[ DISC	loss : 0.482082 ]	[ ADV	loss : 1.162977 ]
+Generated sample: ['tttttt', 'tttttttttttt', 'tttttttttttttt', 'ttttttttttt', 'ttttttttt'] 
+epoch 3	mini-batch 29	[ DISC	loss : 0.384158 ]	[ ADV	loss : 1.139502 ]
+Generated sample: ['ttttttttttttttt', 'tttttttttttt', 'tttttttt', 'tttttttttt', 'tttttt'] 
+epoch 3	mini-batch 39	[ DISC	loss : 0.602068 ]	[ ADV	loss : 0.926567 ]
+Generated sample: ['tttttttt', 't', 'ttttttttttt', 'tttttt', 't'] 
+epoch 3	mini-batch 49	[ DISC	loss : 2.021916 ]	[ ADV	loss : 0.335832 ]
+Generated sample: ['aaaaaaaaaaaa', 't', 'aaaaaaaaa', 'aaaaaat', 'aaaaaaaat'] 
+epoch 3	mini-batch 59	[ DISC	loss : 2.034095 ]	[ ADV	loss : 0.196719 ]
+Generated sample: ['aaaaaaaaa', 'aaaaaaaaa', 'aaaaaaaaaaaa', 'aaaaaaaaaaaa', 'aaaaaaaaa'] 
+epoch 3	mini-batch 69	[ DISC	loss : 1.768054 ]	[ ADV	loss : 0.227267 ]
+Generated sample: ['aaaaaaaaaaa', 'aaaaaaaaaaaaaaa', 'aaaaaaaaaaa', 'aaaaaaaaaaa', 'aaaaaaaaaaaaa'] 
+epoch 3	mini-batch 79	[ DISC	loss : 1.557885 ]	[ ADV	loss : 0.299694 ]
+Generated sample: ['aaaaaaaaaaaa', 'aaaaaaaaaaaaaa', 'aaaaaaaaaaaaaaa', 'aaaaaaaaaaaa', 'aaaaaaaaaaaaa'] 
+epoch 3	mini-batch 89	[ DISC	loss : 1.173341 ]	[ ADV	loss : 0.468933 ]
+Generated sample: ['aaaaaaaaaaaaaaa', 'aaaaaaaaaaa', 'aaaaaaaaaaaaaaa', 'aaaaaaaaaaa', 'aaaaaaaaaaaa'] 
+epoch 3	mini-batch 99	[ DISC	loss : 0.994489 ]	[ ADV	loss : 0.583167 ]
+Generated sample: ['aaaaaaaaaaaaaa', 'aaaaaaaaaaaa', 'aaaaaaaaaaa', 'aaaaaaaaaaaa', 'aaaaaaaaaaaaaaa'] 
+epoch 3	mini-batch 109	[ DISC	loss : 0.751903 ]	[ ADV	loss : 0.772609 ]
+Generated sample: ['aaaaaaaaaaaaa', 'aaaaaaaaaaaa', 'aaaaaaaaaaaaaaa', 'aaaaaaaaaaaaaaa', 'aaaaaaaaaaaaaaa'] 
+epoch 3	mini-batch 119	[ DISC	loss : 0.586353 ]	[ ADV	loss : 0.901080 ]
+Generated sample: ['aaaaaaaaaaaa', 'aaaaaaaaaaaaaaa', 'aaaaaaaaaaa', 'aaaaaaaaaaaa', 'aaaaaaaaaaaa'] 
+epoch 3	mini-batch 129	[ DISC	loss : 0.470717 ]	[ ADV	loss : 1.097111 ]
+Generated sample: ['aaaaaaaaaaaa', 'aaaaaaaaaaaaa', 'aaaaaaaaaaaaa', 'aaaaaaaaaaaaaaa', 'aaaaaaaaaaaaaaa'] 
+epoch 3	mini-batch 139	[ DISC	loss : 0.418320 ]	[ ADV	loss : 1.136961 ]
+Generated sample: ['aaaaaaaaaaaaaaa', 'aaaaaaaaaaaaaaa', 'aaaaaaaaaaaaaa', 'aaaaaaaaaaaaaaa', 'aaaaaaaaaaa'] 
+epoch 3	mini-batch 149	[ DISC	loss : 0.340676 ]	[ ADV	loss : 1.396456 ]
+Generated sample: ['aaaaaaaaaaa', 'aaaaaaaaaaaa', 'aaaaaaaaaaa', 'aaaaaaaaaaaa', 'aaaaaaaaaaaaaa'] 
+epoch 3	mini-batch 159	[ DISC	loss : 0.316266 ]	[ ADV	loss : 1.565589 ]
+Generated sample: ['aaaaaaaaaaa', 'aaaaaaaaaaa', 'aaaaaaaaaaaaa', 'aaaaaaaaaa', 'aaaaaaaa'] 
+epoch 3	mini-batch 169	[ DISC	loss : 0.238838 ]	[ ADV	loss : 1.703076 ]
+Generated sample: ['aaaaaaaaaaaa', 'aaaaaaaaaaaaaaa', 'aaaaaaaaaaa', 'aaaaaaaaaaaaaaa', 'aaaaaaaaaa'] 
+epoch 3	mini-batch 179	[ DISC	loss : 0.303156 ]	[ ADV	loss : 1.368610 ]
+Generated sample: ['aaaiiiiiiiiiiii', 'aaaaaaaaaaa', 'aaaaaaaaaai', 'aaaaaa', 'aaaaaaaaai'] 

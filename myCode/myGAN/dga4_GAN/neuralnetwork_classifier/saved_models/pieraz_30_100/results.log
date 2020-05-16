@@ -1,0 +1,10 @@
+2017-09-22 18:57:19,387 INFO model saved to saved_models/pieraz_2_30_100/model_architecture.json
+2017-09-22 18:57:19,663 INFO network diagram saved to saved_models/pieraz_2_30_100/model.png 
+2017-09-22 18:57:21,678 INFO 
+             precision    recall  f1-score   support
+
+        DGA       0.87      0.93      0.90     27968
+      Legit       0.92      0.86      0.89     26920
+
+avg / total       0.90      0.89      0.89     54888
+
