@@ -80,7 +80,10 @@ def get_feature_2gram():
 def do_nb(x_train, x_test, y_train, y_test):
     gnb = GaussianNB()
     gnb.fit(x_train,y_train) #使用朴素贝叶斯训练
-    y_pred = gnb.predict(x_test)
+
+    y_pred = gnb.predict(x_test)  # 将测试样本进行预测
+
+
     fpr, tpr, threshold = roc_curve(y_test, y_pred)
     x = metrics.auc(fpr, tpr)
     print(x)
@@ -100,7 +103,7 @@ def do_nb(x_train, x_test, y_train, y_test):
     plt.legend(loc="lower right")
     plt.show()
 
-    y_pred=gnb.predict(x_test)   #将测试样本进行预测
+
     print(classification_report(y_test, y_pred))  #与原本真实的标签测试集合进行对比，产生报告
     print (metrics.confusion_matrix(y_test, y_pred)) #与原本真实的标签测试集合进行对比，产生混淆矩阵
 

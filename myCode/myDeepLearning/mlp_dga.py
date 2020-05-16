@@ -94,17 +94,22 @@ def get_feature_2gram():
                                     max_df=1.0,
                                     min_df=1)
     x = CV.fit_transform(x)
-    x_train, x_test, y_train, y_test=train_test_split(x,y,test_size=0.4)
-
+    # a =CV.get_feature_names()
+    # b = CV.vocabulary_
+    # print(a)
+    # print(b)
+    # print(x)
+    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.4)
     return x_train.toarray(), x_test.toarray(), y_train, y_test
 
 def do_mlp(x_train, x_test, y_train, y_test):
 
     global max_features
     # Building deep neural network
-    clf = MLPClassifier(solver='lbfgs', #quasi-Newton方法的优化器
+    clf = MLPClassifier(solver='adam', #quasi-Newton方法的优化器
                         alpha=1e-5,  #正则化项参数
-                        hidden_layer_sizes = (5, 2),#两层隐藏层，第一层隐藏层有5个神经元，第二层也有2个神经元
+                        hidden_layer_sizes = (5, 2),#两层隐藏层，第一层隐藏层有5个神经元，第二层也有2个神经元 ,
+                                            #(128, 64,1)    #例如 (10,10,10) 三层，每层10个神经元
                         random_state = 1) #int 或RandomState，可选，默认None，随机数生成器的状态或种子
     clf.fit(x_train, y_train)
     y_pred = clf.predict(x_test)

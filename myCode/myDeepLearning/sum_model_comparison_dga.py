@@ -117,11 +117,15 @@ def do_nb(x_train, x_test, y_train, y_test):
     # plt.title("nb ROC curve of %s (AUC = %.4f)" % ('lightgbm', auc_area))
     # plt.legend(loc="lower right")
     # plt.show()
+    print(classification_report(y_test, y_pred))
+    print(metrics.confusion_matrix(y_test, y_pred))
     return y_pred, y_test
 
 def do_xgboost(x_train, x_test, y_train, y_test):
     xgb_model = xgb.XGBClassifier().fit(x_train, y_train)
     y_pred = xgb_model.predict(x_test)
+    print(classification_report(y_test, y_pred))
+    print(metrics.confusion_matrix(y_test, y_pred))
     return y_pred,y_test
 
 def do_mlp(x_train, x_test, y_train, y_test):
@@ -134,6 +138,8 @@ def do_mlp(x_train, x_test, y_train, y_test):
                         random_state = 1) #int 或RandomState，可选，默认None，随机数生成器的状态或种子
     clf.fit(x_train, y_train)
     y_pred = clf.predict(x_test)
+    print(classification_report(y_test, y_pred))
+    print(metrics.confusion_matrix(y_test, y_pred))
     return y_pred,y_test
 
 def do_rnn(trainX, testX, trainY, testY):
@@ -168,7 +174,11 @@ def do_rnn(trainX, testX, trainY, testY):
             y_predict.append(0)
         else:
             y_predict.append(1)
+
+    print(classification_report(y_test, y_predict))
+    print(metrics.confusion_matrix(y_test, y_predict))
     return y_predict, y_test
+
 
 
 def sum_plt(nb_predict,nb_test,xgb_predict,xgb_test,mlp_predict,mlp_test, rnn_predict, rnn_test):
@@ -224,10 +234,9 @@ def sum_plt(nb_predict,nb_test,xgb_predict,xgb_test,mlp_predict,mlp_test, rnn_pr
 if __name__ == "__main__":
     print("compare dga")
 
-
-    # print("text feature & nb")
-    # x_train, x_test, y_train, y_test = get_feature()
-    # do_nb(x_train, x_test, y_train, y_test)
+    print("text feature & nb")
+    x_train, x_test, y_train, y_test = get_feature()
+    do_nb(x_train, x_test, y_train, y_test)
     print( "2-gram & nb")
     x_train, x_test, y_train, y_test = get_feature_2gram()
     nb_predict,nb_test = do_nb(x_train, x_test, y_train, y_test)

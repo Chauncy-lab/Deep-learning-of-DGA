@@ -51,11 +51,14 @@ print(cv.vocabulary_)
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2019120211123168.png)
 输出训练后的稀疏矩阵，print(x)
 参数为 ：data列表下标，无序词典下标，该词在data出现的频数
-eg：“为了”在无序词典的下标为0，而且属于data列表的0下标，在data列表里出现了两次，所以为（0，0）2，所以定位了一个词的位置和频数
+eg：“为了”在无序词典的下标为0，而且属于data列表的0下标（data列表以逗号为分割），在data列表里出现了两次，所以为（0，0）2，所以定位了一个词的位置和频数
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191202111325597.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5OTM2NDM0,size_16,color_FFFFFF,t_70)
 转为array，print(x.toarray())
 x的每个定位都可以在坐标中找到，例如：“为了”，
 他的是（0，0） 2，则对应矩阵中第一行第一列的值2，
+
+例如“么会”，他是（0，2）1，则对应第一行第三列的值为1
 其他依此类推
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2019120211140226.png)
 
