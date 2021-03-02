@@ -6,8 +6,6 @@ blog：https://blog.csdn.net/qq_39936434/article/details/103310765
 
 ## 仓库目录
 
- \- [LeetCode 题解](#leetcode-%E9%A2%98%E8%A7%A3) 
-
 - data（本项目研究的数据）
 - image
 - mycode（本项目的代码）
