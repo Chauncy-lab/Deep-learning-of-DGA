@@ -27,16 +27,6 @@ blog：https://blog.csdn.net/qq_39936434/article/details/103310765
 
 ​	因为毕设而接触了该课题，发现很有趣。该仓库专注于DGA域名检测技术的研究，内容包括：传统机器学习、深度学习与生成对抗网络GAN。
 
-## 历史演变
-
-​	先看以下一张图了解为何会出现DGA域名检测技术
-
-![image-20200215102947312](https://raw.githubusercontent.com/Xandra-chan/Deep-learning-of-DGA/master/image/image-20200215102947312.png )
-
-![Uploading image.png…]()
-
-
-​	由此，安全人员与攻击者开始在人工智能领域中展开漫长的博弈~
 
 ## 本仓库所做的研究
 
