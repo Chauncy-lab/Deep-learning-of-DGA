@@ -48,7 +48,7 @@ tensorflow-estimator==1.15.1
 termcolor==1.1.0
 tflearn==0.3.2
 torchfile==0.1.0
-urllib3==1.25.7
+urllib3==1.26.5
 Werkzeug==0.16.0
 wrapt==1.11.2
 xgboost==0.90
